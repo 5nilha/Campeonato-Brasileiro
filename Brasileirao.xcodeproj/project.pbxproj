@@ -21,6 +21,7 @@
 		3E33BAAA255411EE00938D58 /* campeonato_brasileiro.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E33BAA7255411EE00938D58 /* campeonato_brasileiro.json */; };
 		3E33BAB12554867900938D58 /* MockRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33BAB02554867900938D58 /* MockRequest.swift */; };
 		3E33BAB42554881700938D58 /* BrasileiraoHttpCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33BAB32554881700938D58 /* BrasileiraoHttpCode.swift */; };
+		3E33BAB72554908D00938D58 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33BAB62554908D00938D58 /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		3E33BAA7255411EE00938D58 /* campeonato_brasileiro.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = campeonato_brasileiro.json; sourceTree = "<group>"; };
 		3E33BAB02554867900938D58 /* MockRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRequest.swift; sourceTree = "<group>"; };
 		3E33BAB32554881700938D58 /* BrasileiraoHttpCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrasileiraoHttpCode.swift; sourceTree = "<group>"; };
+		3E33BAB62554908D00938D58 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		3E33BA672554013000938D58 = {
 			isa = PBXGroup;
 			children = (
+				3E33BAB52554906B00938D58 /* Helpers */,
 				3E33BAA6255411AC00938D58 /* Mocks */,
 				3E33BA722554013000938D58 /* Brasileirao */,
 				3E33BA8C2554013100938D58 /* BrasileiraoTests */,
@@ -180,6 +183,14 @@
 				3E33BAB32554881700938D58 /* BrasileiraoHttpCode.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		3E33BAB52554906B00938D58 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3E33BAB62554908D00938D58 /* StringExtension.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +329,7 @@
 			files = (
 				3E33BA782554013000938D58 /* ViewController.swift in Sources */,
 				3E33BA7E2554013000938D58 /* Brasileirao.xcdatamodeld in Sources */,
+				3E33BAB72554908D00938D58 /* StringExtension.swift in Sources */,
 				3E33BA742554013000938D58 /* AppDelegate.swift in Sources */,
 				3E33BAB42554881700938D58 /* BrasileiraoHttpCode.swift in Sources */,
 				3E33BA762554013000938D58 /* SceneDelegate.swift in Sources */,
