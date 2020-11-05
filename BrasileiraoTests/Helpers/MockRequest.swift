@@ -28,10 +28,18 @@ final class MockRequest {
         self.timesAttempted = 0
     }
     
+    
+    /*
+     * The following class function will mock a service call for Unit testing.
+     * In the argument we pass the string for the API endpoint, the HTTP request Code we want to simulate the response and the json file which we have the Mock data.
+     * The Mock Response can be used to test all possible responses and scenarios
+    */
     @discardableResult class func mockBackendResponse(_ apiEndpoint: String, httpCode: BrasileiraoHttpCode, jsonFileName: String? = nil) -> MockRequest {
         
         let mock = MockRequest(httpCode: httpCode, fileForURL: { (url) -> String? in
-            
+            if url.containsIgnoringCase(apiEndpoint) {
+                return jsonFileName
+            }
             return nil
         })
         
