@@ -1,0 +1,866 @@
+{
+    "fase_id": 55,
+    "edicao": {
+        "edicao_id": 3,
+        "temporada": "2020",
+        "nome": "Campeonato Brasileiro 2020",
+        "nome_popular": "Brasileirão 2020",
+        "slug": "campeonato-brasileiro-2020"
+    },
+    "campeonato": {
+        "campeonato_id": 10,
+        "nome": "Campeonato Brasileiro",
+        "slug": "campeonato-brasileiro",
+        "nome_popular": "Brasileirão",
+        "edicao_atual": {
+            "edicao_id": 3,
+            "temporada": "2020",
+            "nome": "Campeonato Brasileiro 2020",
+            "nome_popular": "Brasileirão 2020",
+            "slug": "campeonato-brasileiro-2020"
+        },
+        "fase_atual": {
+            "fase_id": 55,
+            "nome": "Fase Única",
+            "slug": null,
+            "tipo": "pontos-corridos",
+            "_link": "/v1/campeonatos/10/fases/55"
+        },
+        "rodada_atual": {
+            "nome": "20ª Rodada",
+            "slug": "20a-rodada",
+            "rodada": 20,
+            "status": "agendada"
+        },
+        "status": "andamento",
+        "tipo": "Pontos Corridos",
+        "_link": "/v1/campeonatos/10"
+    },
+    "nome": "Fase Única",
+    "slug": null,
+    "status": "andamento",
+    "decisivo": false,
+    "eliminatorio": false,
+    "ida_e_volta": true,
+    "tipo": "pontos-corridos",
+    "grupos": [],
+    "chaves": [],
+    "proxima_fase": null,
+    "fase_anterior": null,
+    "partidas": {
+        "1a-rodada": [
+            {
+                "partida_id": 650,
+                "campeonato": {
+                    "campeonato_id": 10,
+                    "nome": "Campeonato Brasileiro",
+                    "slug": "campeonato-brasileiro"
+                },
+                "placar": "Goiás x São Paulo",
+                "time_mandante": {
+                    "time_id": 115,
+                    "nome_popular": "Goiás",
+                    "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999dc97b4e2.svg"
+                },
+                "time_visitante": {
+                    "time_id": 57,
+                    "nome_popular": "São Paulo",
+                    "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999ccdc1656.svg"
+                },
+                "placar_mandante": null,
+                "placar_visitante": null,
+                "status": "agendado",
+                "slug": "goias-sao-paulo-650",
+                "data_realizacao": null,
+                "hora_realizacao": null,
+                "data_realizacao_iso": null,
+                "estadio": {
+                    "estadio_id": 324,
+                    "nome_popular": "Serrinha"
+                },
+                "_link": "/v1/partidas/650"
+            },
+            {
+                "partida_id": 652,
+                "campeonato": {
+                    "campeonato_id": 10,
+                    "nome": "Campeonato Brasileiro",
+                    "slug": "campeonato-brasileiro"
+                },
+                "placar": "Palmeiras x Vasco",
+                "time_mandante": {
+                    "time_id": 56,
+                    "nome_popular": "Palmeiras",
+                    "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999ccc90039.svg"
+                },
+                "time_visitante": {
+                    "time_id": 23,
+                    "nome_popular": "Vasco",
+                    "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999c9c703f0.svg"
+                },
+                "placar_mandante": null,
+                "placar_visitante": null,
+                "status": "agendado",
+                "slug": "palmeiras-vasco-652",
+                "data_realizacao": null,
+                "hora_realizacao": null,
+                "data_realizacao_iso": null,
+                "estadio": {
+                    "estadio_id": 327,
+                    "nome_popular": "Allianz Parque"
+                },
+                "_link": "/v1/partidas/652"
+            },
+            {
+                "partida_id": 643,
+                "campeonato": {
+                    "campeonato_id": 10,
+                    "nome": "Campeonato Brasileiro",
+                    "slug": "campeonato-brasileiro"
+                },
+                "placar": "Fortaleza 0x2 Athletico-PR",
+                "time_mandante": {
+                    "time_id": 131,
+                    "nome_popular": "Fortaleza",
+                    "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999ddaa261b.svg"
+                },
+                "time_visitante": {
+                    "time_id": 185,
+                    "nome_popular": "Athletico-PR",
+                    "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999e2864a27.svg"
+                },
+                "placar_mandante": 0,
+                "placar_visitante": 2,
+                "status": "finalizado",
+                "slug": "fortaleza-athletico-pr-643",
+                "data_realizacao": "08/08/2020",
+                "hora_realizacao": "19:00",
+                "data_realizacao_iso": "2020-08-08T19:00:00-0300",
+                "estadio": {
+                    "estadio_id": 112,
+                    "nome_popular": "Castelão (CE)"
+                },
+                "_link": "/v1/partidas/643"
+            },
+            {
+                "partida_id": 644,
+                "campeonato": {
+                    "campeonato_id": 10,
+                    "nome": "Campeonato Brasileiro",
+                    "slug": "campeonato-brasileiro"
+                },
+                "placar": "Coritiba 0x1 Internacional",
+                "time_mandante": {
+                    "time_id": 84,
+                    "nome_popular": "Coritiba",
+                    "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999d991e8b8.svg"
+                },
+                "time_visitante": {
+                    "time_id": 44,
+                    "nome_popular": "Internacional",
+                    "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999cbb0b297.svg"
+                },
+                "placar_mandante": 0,
+                "placar_visitante": 1,
+                "status": "finalizado",
+                "slug": "coritiba-internacional-644",
+                "data_realizacao": "08/08/2020",
+                "hora_realizacao": "19:30",
+                "data_realizacao_iso": "2020-08-08T19:30:00-0300",
+                "estadio": {
+                    "estadio_id": 317,
+                    "nome_popular": "Couto Pereira"
+                },
+                "_link": "/v1/partidas/644"
+            },
+            {
+                "partida_id": 645,
+                "campeonato": {
+                    "campeonato_id": 10,
+                    "nome": "Campeonato Brasileiro",
+                    "slug": "campeonato-brasileiro"
+                },
+                "placar": "Sport 3x2 Ceará",
+                "time_mandante": {
+                    "time_id": 79,
+                    "nome_popular": "Sport",
+                    "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999d9173231.svg"
+                },
+                "time_visitante": {
+                    "time_id": 105,
+                    "nome_popular": "Ceará",
+                    "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999dba767ba.svg"
+                },
+                "placar_mandante": 3,
+                "placar_visitante": 2,
+                "status": "finalizado",
+                "slug": "sport-ceara-645",
+                "data_realizacao": "08/08/2020",
+                "hora_realizacao": "21:00",
+                "data_realizacao_iso": "2020-08-08T21:00:00-0300",
+                "estadio": {
+                    "estadio_id": 318,
+                    "nome_popular": "Ilha do Retiro"
+                },
+                "_link": "/v1/partidas/645"
+            },
+            {
+                "partida_id": 647,
+                "campeonato": {
+                    "campeonato_id": 10,
+                    "nome": "Campeonato Brasileiro",
+                    "slug": "campeonato-brasileiro"
+                },
+                "placar": "Flamengo 0x1 Atlético-MG",
+                "time_mandante": {
+                    "time_id": 18,
+                    "nome_popular": "Flamengo",
+                    "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999c95084cb.svg"
+                },
+                "time_visitante": {
+                    "time_id": 30,
+                    "nome_popular": "Atlético-MG",
+                    "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999ca6bfd30.svg"
+                },
+                "placar_mandante": 0,
+                "placar_visitante": 1,
+                "status": "finalizado",
+                "slug": "flamengo-atletico-mg-647",
+                "data_realizacao": "09/08/2020",
+                "hora_realizacao": "16:00",
+                "data_realizacao_iso": "2020-08-09T16:00:00-0300",
+                "estadio": {
+                    "estadio_id": 19,
+                    "nome_popular": "Maracanã"
+                },
+                "_link": "/v1/partidas/647"
+            },
+            {
+                "partida_id": 648,
+                "campeonato": {
+                    "campeonato_id": 10,
+                    "nome": "Campeonato Brasileiro",
+                    "slug": "campeonato-brasileiro"
+                },
+                "placar": "Santos 1x1 Bragantino",
+                "time_mandante": {
+                    "time_id": 63,
+                    "nome_popular": "Santos",
+                    "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999d7525121.svg"
+                },
+                "time_visitante": {
+                    "time_id": 64,
+                    "nome_popular": "Bragantino",
+                    "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999d770dbb2.svg"
+                },
+                "placar_mandante": 1,
+                "placar_visitante": 1,
+                "status": "finalizado",
+                "slug": "santos-bragantino-648",
+                "data_realizacao": "09/08/2020",
+                "hora_realizacao": "16:00",
+                "data_realizacao_iso": "2020-08-09T16:00:00-0300",
+                "estadio": {
+                    "estadio_id": 66,
+                    "nome_popular": "Vila Belmiro"
+                },
+                "_link": "/v1/partidas/648"
+            },
+            {
+                "partida_id": 651,
+                "campeonato": {
+                    "campeonato_id": 10,
+                    "nome": "Campeonato Brasileiro",
+                    "slug": "campeonato-brasileiro"
+                },
+                "placar": "Grêmio 1x0 Fluminense",
+                "time_mandante": {
+                    "time_id": 45,
+                    "nome_popular": "Grêmio",
+                    "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999cbc411b2.svg"
+                },
+                "time_visitante": {
+                    "time_id": 26,
+                    "nome_popular": "Fluminense",
+                    "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999ca0e01e3.svg"
+                },
+                "placar_mandante": 1,
+                "placar_visitante": 0,
+                "status": "finalizado",
+                "slug": "gremio-fluminense-651",
+                "data_realizacao": "09/08/2020",
+                "hora_realizacao": "19:00",
+                "data_realizacao_iso": "2020-08-09T19:00:00-0300",
+                "estadio": {
+                    "estadio_id": 54,
+                    "nome_popular": "Arena do Grêmio"
+                },
+                "_link": "/v1/partidas/651"
+            },
+            {
+                "partida_id": 646,
+                "campeonato": {
+                    "campeonato_id": 10,
+                    "nome": "Campeonato Brasileiro",
+                    "slug": "campeonato-brasileiro"
+                },
+                "placar": "Botafogo 1x2 Bahia",
+                "time_mandante": {
+                    "time_id": 22,
+                    "nome_popular": "Botafogo",
+                    "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999c9b06760.svg"
+                },
+                "time_visitante": {
+                    "time_id": 68,
+                    "nome_popular": "Bahia",
+                    "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999d8090849.svg"
+                },
+                "placar_mandante": 1,
+                "placar_visitante": 2,
+                "status": "finalizado",
+                "slug": "botafogo-bahia-646",
+                "data_realizacao": "30/09/2020",
+                "hora_realizacao": "21:30",
+                "data_realizacao_iso": "2020-09-30T21:30:00-0300",
+                "estadio": {
+                    "estadio_id": 26,
+                    "nome_popular": "Nilton Santos (Engenhão)"
+                },
+                "_link": "/v1/partidas/646"
+            },
+            {
+                "partida_id": 649,
+                "campeonato": {
+                    "campeonato_id": 10,
+                    "nome": "Campeonato Brasileiro",
+                    "slug": "campeonato-brasileiro"
+                },
+                "placar": "Corinthians 0x0 Atlético-GO",
+                "time_mandante": {
+                    "time_id": 65,
+                    "nome_popular": "Corinthians",
+                    "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999d7ab48fa.svg"
+                },
+                "time_visitante": {
+                    "time_id": 98,
+                    "nome_popular": "Atlético-GO",
+                    "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999db078911.svg"
+                },
+                "placar_mandante": 0,
+                "placar_visitante": 0,
+                "status": "finalizado",
+                "slug": "corinthians-atletico-go-649",
+                "data_realizacao": "30/09/2020",
+                "hora_realizacao": "21:30",
+                "data_realizacao_iso": "2020-09-30T21:30:00-0300",
+                "estadio": {
+                    "estadio_id": 329,
+                    "nome_popular": "Neo Química Arena"
+                },
+                "_link": "/v1/partidas/649"
+            }
+        ]
+    },
+    "tabela": [
+        {
+            "posicao": 1,
+            "pontos": 35,
+            "time": {
+                "time_id": 44,
+                "nome_popular": "Internacional",
+                "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999cbb0b297.svg"
+            },
+            "jogos": 19,
+            "vitorias": 10,
+            "empates": 5,
+            "derrotas": 4,
+            "gols_pro": 30,
+            "gols_contra": 16,
+            "saldo_gols": 14,
+            "aproveitamento": 61.4,
+            "variacao_posicao": 0,
+            "ultimos_jogos": [
+                "v",
+                "v",
+                "v",
+                "e",
+                "d"
+            ]
+        },
+        {
+            "posicao": 2,
+            "pontos": 35,
+            "time": {
+                "time_id": 18,
+                "nome_popular": "Flamengo",
+                "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999c95084cb.svg"
+            },
+            "jogos": 19,
+            "vitorias": 10,
+            "empates": 5,
+            "derrotas": 4,
+            "gols_pro": 33,
+            "gols_contra": 25,
+            "saldo_gols": 8,
+            "aproveitamento": 61.4,
+            "variacao_posicao": 0,
+            "ultimos_jogos": [
+                "v",
+                "e",
+                "v",
+                "e",
+                "d"
+            ]
+        },
+        {
+            "posicao": 3,
+            "pontos": 32,
+            "time": {
+                "time_id": 30,
+                "nome_popular": "Atlético-MG",
+                "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999ca6bfd30.svg"
+            },
+            "jogos": 18,
+            "vitorias": 10,
+            "empates": 2,
+            "derrotas": 6,
+            "gols_pro": 31,
+            "gols_contra": 23,
+            "saldo_gols": 8,
+            "aproveitamento": 59.3,
+            "variacao_posicao": 0,
+            "ultimos_jogos": [
+                "v",
+                "e",
+                "d",
+                "e",
+                "d"
+            ]
+        },
+        {
+            "posicao": 4,
+            "pontos": 32,
+            "time": {
+                "time_id": 26,
+                "nome_popular": "Fluminense",
+                "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999ca0e01e3.svg"
+            },
+            "jogos": 19,
+            "vitorias": 9,
+            "empates": 5,
+            "derrotas": 5,
+            "gols_pro": 29,
+            "gols_contra": 21,
+            "saldo_gols": 8,
+            "aproveitamento": 56.1,
+            "variacao_posicao": 0,
+            "ultimos_jogos": [
+                "v",
+                "e",
+                "e",
+                "v",
+                "v"
+            ]
+        },
+        {
+            "posicao": 5,
+            "pontos": 30,
+            "time": {
+                "time_id": 57,
+                "nome_popular": "São Paulo",
+                "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999ccdc1656.svg"
+            },
+            "jogos": 16,
+            "vitorias": 8,
+            "empates": 6,
+            "derrotas": 2,
+            "gols_pro": 24,
+            "gols_contra": 14,
+            "saldo_gols": 10,
+            "aproveitamento": 62.5,
+            "variacao_posicao": 0,
+            "ultimos_jogos": [
+                "e",
+                "v",
+                "v",
+                "e",
+                "v"
+            ]
+        },
+        {
+            "posicao": 6,
+            "pontos": 30,
+            "time": {
+                "time_id": 63,
+                "nome_popular": "Santos",
+                "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999d7525121.svg"
+            },
+            "jogos": 19,
+            "vitorias": 8,
+            "empates": 6,
+            "derrotas": 5,
+            "gols_pro": 27,
+            "gols_contra": 23,
+            "saldo_gols": 4,
+            "aproveitamento": 52.6,
+            "variacao_posicao": 0,
+            "ultimos_jogos": [
+                "v",
+                "d",
+                "v",
+                "d",
+                "v"
+            ]
+        },
+        {
+            "posicao": 7,
+            "pontos": 28,
+            "time": {
+                "time_id": 56,
+                "nome_popular": "Palmeiras",
+                "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999ccc90039.svg"
+            },
+            "jogos": 18,
+            "vitorias": 7,
+            "empates": 7,
+            "derrotas": 4,
+            "gols_pro": 25,
+            "gols_contra": 20,
+            "saldo_gols": 5,
+            "aproveitamento": 51.9,
+            "variacao_posicao": 0,
+            "ultimos_jogos": [
+                "d",
+                "d",
+                "d",
+                "v",
+                "v"
+            ]
+        },
+        {
+            "posicao": 8,
+            "pontos": 27,
+            "time": {
+                "time_id": 45,
+                "nome_popular": "Grêmio",
+                "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999cbc411b2.svg"
+            },
+            "jogos": 18,
+            "vitorias": 6,
+            "empates": 9,
+            "derrotas": 3,
+            "gols_pro": 21,
+            "gols_contra": 17,
+            "saldo_gols": 4,
+            "aproveitamento": 50,
+            "variacao_posicao": 1,
+            "ultimos_jogos": [
+                "d",
+                "v",
+                "e",
+                "v",
+                "v"
+            ]
+        },
+        {
+            "posicao": 9,
+            "pontos": 24,
+            "time": {
+                "time_id": 79,
+                "nome_popular": "Sport",
+                "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999d9173231.svg"
+            },
+            "jogos": 19,
+            "vitorias": 7,
+            "empates": 3,
+            "derrotas": 9,
+            "gols_pro": 19,
+            "gols_contra": 26,
+            "saldo_gols": -7,
+            "aproveitamento": 42.1,
+            "variacao_posicao": 3,
+            "ultimos_jogos": [
+                "d",
+                "d",
+                "d",
+                "e",
+                "v"
+            ]
+        },
+        {
+            "posicao": 10,
+            "pontos": 24,
+            "time": {
+                "time_id": 131,
+                "nome_popular": "Fortaleza",
+                "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999ddaa261b.svg"
+            },
+            "jogos": 17,
+            "vitorias": 6,
+            "empates": 6,
+            "derrotas": 5,
+            "gols_pro": 16,
+            "gols_contra": 12,
+            "saldo_gols": 4,
+            "aproveitamento": 47.1,
+            "variacao_posicao": -2,
+            "ultimos_jogos": [
+                "e",
+                "v",
+                "e",
+                "v",
+                "d"
+            ]
+        },
+        {
+            "posicao": 11,
+            "pontos": 24,
+            "time": {
+                "time_id": 65,
+                "nome_popular": "Corinthians",
+                "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999d7ab48fa.svg"
+            },
+            "jogos": 19,
+            "vitorias": 6,
+            "empates": 6,
+            "derrotas": 7,
+            "gols_pro": 22,
+            "gols_contra": 26,
+            "saldo_gols": -4,
+            "aproveitamento": 42.1,
+            "variacao_posicao": 2,
+            "ultimos_jogos": [
+                "d",
+                "v",
+                "d",
+                "v",
+                "v"
+            ]
+        },
+        {
+            "posicao": 12,
+            "pontos": 23,
+            "time": {
+                "time_id": 105,
+                "nome_popular": "Ceará",
+                "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999dba767ba.svg"
+            },
+            "jogos": 18,
+            "vitorias": 6,
+            "empates": 5,
+            "derrotas": 7,
+            "gols_pro": 23,
+            "gols_contra": 26,
+            "saldo_gols": -3,
+            "aproveitamento": 42.6,
+            "variacao_posicao": -2,
+            "ultimos_jogos": [
+                "e",
+                "v",
+                "e",
+                "v",
+                "e"
+            ]
+        },
+        {
+            "posicao": 13,
+            "pontos": 22,
+            "time": {
+                "time_id": 98,
+                "nome_popular": "Atlético-GO",
+                "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999db078911.svg"
+            },
+            "jogos": 19,
+            "vitorias": 5,
+            "empates": 7,
+            "derrotas": 7,
+            "gols_pro": 17,
+            "gols_contra": 25,
+            "saldo_gols": -8,
+            "aproveitamento": 38.6,
+            "variacao_posicao": -2,
+            "ultimos_jogos": [
+                "v",
+                "v",
+                "e",
+                "d",
+                "d"
+            ]
+        },
+        {
+            "posicao": 14,
+            "pontos": 20,
+            "time": {
+                "time_id": 22,
+                "nome_popular": "Botafogo",
+                "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999c9b06760.svg"
+            },
+            "jogos": 18,
+            "vitorias": 3,
+            "empates": 11,
+            "derrotas": 4,
+            "gols_pro": 19,
+            "gols_contra": 22,
+            "saldo_gols": -3,
+            "aproveitamento": 37,
+            "variacao_posicao": 2,
+            "ultimos_jogos": [
+                "v",
+                "v",
+                "d",
+                "e",
+                "e"
+            ]
+        },
+        {
+            "posicao": 15,
+            "pontos": 19,
+            "time": {
+                "time_id": 68,
+                "nome_popular": "Bahia",
+                "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999d8090849.svg"
+            },
+            "jogos": 18,
+            "vitorias": 5,
+            "empates": 4,
+            "derrotas": 9,
+            "gols_pro": 23,
+            "gols_contra": 28,
+            "saldo_gols": -5,
+            "aproveitamento": 35.2,
+            "variacao_posicao": -1,
+            "ultimos_jogos": [
+                "v",
+                "d",
+                "e",
+                "v",
+                "d"
+            ]
+        },
+        {
+            "posicao": 16,
+            "pontos": 19,
+            "time": {
+                "time_id": 23,
+                "nome_popular": "Vasco",
+                "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999c9c703f0.svg"
+            },
+            "jogos": 17,
+            "vitorias": 5,
+            "empates": 4,
+            "derrotas": 8,
+            "gols_pro": 20,
+            "gols_contra": 25,
+            "saldo_gols": -5,
+            "aproveitamento": 37.3,
+            "variacao_posicao": 1,
+            "ultimos_jogos": [
+                "d",
+                "d",
+                "d",
+                "d",
+                "e"
+            ]
+        },
+        {
+            "posicao": 17,
+            "pontos": 19,
+            "time": {
+                "time_id": 84,
+                "nome_popular": "Coritiba",
+                "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999d991e8b8.svg"
+            },
+            "jogos": 19,
+            "vitorias": 5,
+            "empates": 4,
+            "derrotas": 10,
+            "gols_pro": 16,
+            "gols_contra": 24,
+            "saldo_gols": -8,
+            "aproveitamento": 33.3,
+            "variacao_posicao": 2,
+            "ultimos_jogos": [
+                "e",
+                "v",
+                "d",
+                "d",
+                "v"
+            ]
+        },
+        {
+            "posicao": 18,
+            "pontos": 19,
+            "time": {
+                "time_id": 64,
+                "nome_popular": "Bragantino",
+                "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999d770dbb2.svg"
+            },
+            "jogos": 19,
+            "vitorias": 4,
+            "empates": 7,
+            "derrotas": 8,
+            "gols_pro": 22,
+            "gols_contra": 26,
+            "saldo_gols": -4,
+            "aproveitamento": 33.3,
+            "variacao_posicao": -3,
+            "ultimos_jogos": [
+                "d",
+                "e",
+                "v",
+                "v",
+                "d"
+            ]
+        },
+        {
+            "posicao": 19,
+            "pontos": 16,
+            "time": {
+                "time_id": 185,
+                "nome_popular": "Athletico-PR",
+                "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999e2864a27.svg"
+            },
+            "jogos": 18,
+            "vitorias": 4,
+            "empates": 4,
+            "derrotas": 10,
+            "gols_pro": 13,
+            "gols_contra": 20,
+            "saldo_gols": -7,
+            "aproveitamento": 29.6,
+            "variacao_posicao": -1,
+            "ultimos_jogos": [
+                "d",
+                "d",
+                "e",
+                "d",
+                "d"
+            ]
+        },
+        {
+            "posicao": 20,
+            "pontos": 12,
+            "time": {
+                "time_id": 115,
+                "nome_popular": "Goiás",
+                "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999dc97b4e2.svg"
+            },
+            "jogos": 17,
+            "vitorias": 2,
+            "empates": 6,
+            "derrotas": 9,
+            "gols_pro": 20,
+            "gols_contra": 31,
+            "saldo_gols": -11,
+            "aproveitamento": 23.5,
+            "variacao_posicao": 0,
+            "ultimos_jogos": [
+                "d",
+                "e",
+                "e",
+                "d",
+                "e"
+            ]
+        }
+    ]
+}

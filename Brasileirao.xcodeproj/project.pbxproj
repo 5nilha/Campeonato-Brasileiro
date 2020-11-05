@@ -16,6 +16,9 @@
 		3E33BA832554013100938D58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E33BA812554013100938D58 /* LaunchScreen.storyboard */; };
 		3E33BA8E2554013100938D58 /* BrasileiraoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33BA8D2554013100938D58 /* BrasileiraoTests.swift */; };
 		3E33BA992554013100938D58 /* BrasileiraoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33BA982554013100938D58 /* BrasileiraoUITests.swift */; };
+		3E33BAA8255411EE00938D58 /* campeonato_brasileiro.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E33BAA7255411EE00938D58 /* campeonato_brasileiro.json */; };
+		3E33BAA9255411EE00938D58 /* campeonato_brasileiro.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E33BAA7255411EE00938D58 /* campeonato_brasileiro.json */; };
+		3E33BAAA255411EE00938D58 /* campeonato_brasileiro.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E33BAA7255411EE00938D58 /* campeonato_brasileiro.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,7 @@
 		3E33BA942554013100938D58 /* BrasileiraoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrasileiraoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E33BA982554013100938D58 /* BrasileiraoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrasileiraoUITests.swift; sourceTree = "<group>"; };
 		3E33BA9A2554013100938D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E33BAA7255411EE00938D58 /* campeonato_brasileiro.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = campeonato_brasileiro.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 		3E33BA672554013000938D58 = {
 			isa = PBXGroup;
 			children = (
+				3E33BAA6255411AC00938D58 /* Mocks */,
 				3E33BA722554013000938D58 /* Brasileirao */,
 				3E33BA8C2554013100938D58 /* BrasileiraoTests */,
 				3E33BA972554013100938D58 /* BrasileiraoUITests */,
@@ -116,6 +121,7 @@
 		3E33BA8C2554013100938D58 /* BrasileiraoTests */ = {
 			isa = PBXGroup;
 			children = (
+				3E33BAAB2554124600938D58 /* Features */,
 				3E33BA8D2554013100938D58 /* BrasileiraoTests.swift */,
 				3E33BA8F2554013100938D58 /* Info.plist */,
 			);
@@ -129,6 +135,29 @@
 				3E33BA9A2554013100938D58 /* Info.plist */,
 			);
 			path = BrasileiraoUITests;
+			sourceTree = "<group>";
+		};
+		3E33BAA6255411AC00938D58 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				3E33BAA7255411EE00938D58 /* campeonato_brasileiro.json */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		3E33BAAB2554124600938D58 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				3E33BAAC2554124E00938D58 /* Service */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		3E33BAAC2554124E00938D58 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E33BAA8255411EE00938D58 /* campeonato_brasileiro.json in Resources */,
 				3E33BA832554013100938D58 /* LaunchScreen.storyboard in Resources */,
 				3E33BA802554013100938D58 /* Assets.xcassets in Resources */,
 				3E33BA7B2554013000938D58 /* Main.storyboard in Resources */,
@@ -245,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E33BAA9255411EE00938D58 /* campeonato_brasileiro.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E33BAAA255411EE00938D58 /* campeonato_brasileiro.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
