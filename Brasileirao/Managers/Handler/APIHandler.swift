@@ -23,7 +23,7 @@ final class APIHandler {
     final func fetchAPIData(completion: @escaping (Result<Data, Error>) -> ()) {
         guard let url = url
         else {
-            //TODO: Add Log Error
+            Logger.log(error: .emptyURL)
             return
         }
         var request = URLRequest(url: url)

@@ -11,6 +11,7 @@ import Foundation
 enum RequestError: Error {
     case wrongPath
     case invalidURL
+    case emptyURL
     case decodedError
     case unknown
     
@@ -27,7 +28,9 @@ enum RequestError: Error {
         case .decodedError:
             return "Error trying to decode data"
         case .invalidURL:
-            return "Error of invalid url"
+            return "Error of invalid URL"
+        case .emptyURL:
+            return "Error of Empty or Nil URL"
         case .wrongPath:
             return "Error with the file path wrong"
         case .unknown:
