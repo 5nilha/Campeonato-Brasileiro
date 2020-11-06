@@ -12,5 +12,5 @@ typealias CompletedRequest = (_ data: Data?, _ httpCode: BrasileiraoHttpCode?, _
 
 final class RequestManager {
     static var sharedInstance = RequestManager()
-    
+    static var httpRequest = HttpRequest()
 }

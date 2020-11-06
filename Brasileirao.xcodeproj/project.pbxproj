@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E21530C2555D54C005EA396 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E21530B2555D54C005EA396 /* RequestManager.swift */; };
+		3E2153122555DE58005EA396 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2153112555DE58005EA396 /* HttpRequest.swift */; };
+		3E2153182555DECD005EA396 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2153172555DECD005EA396 /* SessionManager.swift */; };
+		3E21531F2555E091005EA396 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E21531E2555E091005EA396 /* APIHandler.swift */; };
 		3E33BA742554013000938D58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33BA732554013000938D58 /* AppDelegate.swift */; };
 		3E33BA762554013000938D58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33BA752554013000938D58 /* SceneDelegate.swift */; };
 		3E33BA782554013000938D58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33BA772554013000938D58 /* ViewController.swift */; };
@@ -42,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E21530B2555D54C005EA396 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		3E2153112555DE58005EA396 /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		3E2153172555DECD005EA396 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		3E21531E2555E091005EA396 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 		3E33BA702554013000938D58 /* Brasileirao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brasileirao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E33BA732554013000938D58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E33BA752554013000938D58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,10 +96,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E2153102555DE33005EA396 /* HttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				3E33BAB32554881700938D58 /* BrasileiraoHttpCode.swift */,
+				3E21530B2555D54C005EA396 /* RequestManager.swift */,
+				3E2153112555DE58005EA396 /* HttpRequest.swift */,
+			);
+			path = HttpRequest;
+			sourceTree = "<group>";
+		};
+		3E2153162555DEA2005EA396 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				3E2153172555DECD005EA396 /* SessionManager.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		3E21531D2555E07C005EA396 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				3E21531E2555E091005EA396 /* APIHandler.swift */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
 		3E33BA672554013000938D58 = {
 			isa = PBXGroup;
 			children = (
-				3E33BAB52554906B00938D58 /* Helpers */,
 				3E33BAA6255411AC00938D58 /* Mocks */,
 				3E33BA722554013000938D58 /* Brasileirao */,
 				3E33BA8C2554013100938D58 /* BrasileiraoTests */,
@@ -113,6 +146,7 @@
 		3E33BA722554013000938D58 /* Brasileirao */ = {
 			isa = PBXGroup;
 			children = (
+				3E33BAB52554906B00938D58 /* Helpers */,
 				3E33BAB2255487D200938D58 /* Managers */,
 				3E33BA732554013000938D58 /* AppDelegate.swift */,
 				3E33BA752554013000938D58 /* SceneDelegate.swift */,
@@ -180,7 +214,9 @@
 		3E33BAB2255487D200938D58 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				3E33BAB32554881700938D58 /* BrasileiraoHttpCode.swift */,
+				3E21531D2555E07C005EA396 /* Handler */,
+				3E2153162555DEA2005EA396 /* Session */,
+				3E2153102555DE33005EA396 /* HttpRequest */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -329,8 +365,12 @@
 			files = (
 				3E33BA782554013000938D58 /* ViewController.swift in Sources */,
 				3E33BA7E2554013000938D58 /* Brasileirao.xcdatamodeld in Sources */,
+				3E2153182555DECD005EA396 /* SessionManager.swift in Sources */,
 				3E33BAB72554908D00938D58 /* StringExtension.swift in Sources */,
 				3E33BA742554013000938D58 /* AppDelegate.swift in Sources */,
+				3E21530C2555D54C005EA396 /* RequestManager.swift in Sources */,
+				3E2153122555DE58005EA396 /* HttpRequest.swift in Sources */,
+				3E21531F2555E091005EA396 /* APIHandler.swift in Sources */,
 				3E33BAB42554881700938D58 /* BrasileiraoHttpCode.swift in Sources */,
 				3E33BA762554013000938D58 /* SceneDelegate.swift in Sources */,
 			);
