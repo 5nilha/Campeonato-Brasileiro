@@ -26,7 +26,7 @@ class Logger {
         print(errorLog)
     }
     
-    class func debugServiceSuccess(info: String, response: String, data: Any) {
+    class func debugServiceSuccess(info: String, httpCode: BrasileiraoHttpCode, response: URLResponse, data: Any) {
         print("========================= Debugging =============================")
         print("Information = \(info)")
         print("Response = \(response)")

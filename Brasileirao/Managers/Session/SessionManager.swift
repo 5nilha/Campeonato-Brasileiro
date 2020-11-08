@@ -26,7 +26,7 @@ class SessionManager {
                 completion(.failure(RequestError.unknown))
                 return
             }
-            Logger.debugServiceSuccess(info: "Data fetched from API", response: "200", data: data)
+            Logger.debugServiceSuccess(info: "Data fetched from API", httpCode: BrasileiraoHttpCode.ok, response: response, data: data)
             completion(.success(data))
         }
         
