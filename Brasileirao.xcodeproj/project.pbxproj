@@ -13,6 +13,10 @@
 		3E21531F2555E091005EA396 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E21531E2555E091005EA396 /* APIHandler.swift */; };
 		3E2153272555E92B005EA396 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2153262555E92B005EA396 /* Logger.swift */; };
 		3E21532F2555E972005EA396 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E21532E2555E972005EA396 /* RequestError.swift */; };
+		3E21533C2557FA26005EA396 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E21533B2557FA26005EA396 /* Utils.swift */; };
+		3E2153422557FBA8005EA396 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2153412557FBA8005EA396 /* BaseViewController.swift */; };
+		3E21534B2557FBE9005EA396 /* UtilsDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E21534A2557FBE9005EA396 /* UtilsDelegates.swift */; };
+		3E2153522557FF49005EA396 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E2153512557FF49005EA396 /* Localizable.strings */; };
 		3E33BA742554013000938D58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33BA732554013000938D58 /* AppDelegate.swift */; };
 		3E33BA762554013000938D58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33BA752554013000938D58 /* SceneDelegate.swift */; };
 		3E33BA782554013000938D58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33BA772554013000938D58 /* ViewController.swift */; };
@@ -54,6 +58,10 @@
 		3E21531E2555E091005EA396 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 		3E2153262555E92B005EA396 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		3E21532E2555E972005EA396 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		3E21533B2557FA26005EA396 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		3E2153412557FBA8005EA396 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		3E21534A2557FBE9005EA396 /* UtilsDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsDelegates.swift; sourceTree = "<group>"; };
+		3E2153512557FF49005EA396 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		3E33BA702554013000938D58 /* Brasileirao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brasileirao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E33BA732554013000938D58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E33BA752554013000938D58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +143,39 @@
 			path = Logger;
 			sourceTree = "<group>";
 		};
+		3E2153402557FB8D005EA396 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3E2153412557FBA8005EA396 /* BaseViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3E2153492557FBCF005EA396 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3E21533B2557FA26005EA396 /* Utils.swift */,
+				3E21534A2557FBE9005EA396 /* UtilsDelegates.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3E21534F2557FEF0005EA396 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3E2153502557FF14005EA396 /* Localization */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3E2153502557FF14005EA396 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				3E2153512557FF49005EA396 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		3E33BA672554013000938D58 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +200,8 @@
 		3E33BA722554013000938D58 /* Brasileirao */ = {
 			isa = PBXGroup;
 			children = (
+				3E21534F2557FEF0005EA396 /* Resources */,
+				3E2153402557FB8D005EA396 /* Core */,
 				3E33BAB52554906B00938D58 /* Helpers */,
 				3E33BAB2255487D200938D58 /* Managers */,
 				3E33BA732554013000938D58 /* AppDelegate.swift */,
@@ -238,6 +281,7 @@
 		3E33BAB52554906B00938D58 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				3E2153492557FBCF005EA396 /* Utils */,
 				3E33BAB62554908D00938D58 /* StringExtension.swift */,
 			);
 			path = Helpers;
@@ -347,6 +391,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E2153522557FF49005EA396 /* Localizable.strings in Resources */,
 				3E33BAA8255411EE00938D58 /* campeonato_brasileiro.json in Resources */,
 				3E33BA832554013100938D58 /* LaunchScreen.storyboard in Resources */,
 				3E33BA802554013100938D58 /* Assets.xcassets in Resources */,
@@ -380,7 +425,9 @@
 				3E33BA782554013000938D58 /* ViewController.swift in Sources */,
 				3E2153272555E92B005EA396 /* Logger.swift in Sources */,
 				3E33BA7E2554013000938D58 /* Brasileirao.xcdatamodeld in Sources */,
+				3E21533C2557FA26005EA396 /* Utils.swift in Sources */,
 				3E2153182555DECD005EA396 /* SessionManager.swift in Sources */,
+				3E2153422557FBA8005EA396 /* BaseViewController.swift in Sources */,
 				3E33BAB72554908D00938D58 /* StringExtension.swift in Sources */,
 				3E33BA742554013000938D58 /* AppDelegate.swift in Sources */,
 				3E21530C2555D54C005EA396 /* RequestManager.swift in Sources */,
@@ -388,6 +435,7 @@
 				3E21532F2555E972005EA396 /* RequestError.swift in Sources */,
 				3E21531F2555E091005EA396 /* APIHandler.swift in Sources */,
 				3E33BAB42554881700938D58 /* BrasileiraoHttpCode.swift in Sources */,
+				3E21534B2557FBE9005EA396 /* UtilsDelegates.swift in Sources */,
 				3E33BA762554013000938D58 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
