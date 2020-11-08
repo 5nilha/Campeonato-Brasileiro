@@ -31,6 +31,8 @@
 		3E33BAB12554867900938D58 /* MockRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33BAB02554867900938D58 /* MockRequest.swift */; };
 		3E33BAB42554881700938D58 /* BrasileiraoHttpCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33BAB32554881700938D58 /* BrasileiraoHttpCode.swift */; };
 		3E33BAB72554908D00938D58 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33BAB62554908D00938D58 /* StringExtension.swift */; };
+		3E8FD27025583EDF00E4DC50 /* CampeonatoParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8FD26F25583EDF00E4DC50 /* CampeonatoParser.swift */; };
+		3E8FD27725583F5000E4DC50 /* CampeonatoBrasileiro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8FD27625583F5000E4DC50 /* CampeonatoBrasileiro.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		3E33BAB02554867900938D58 /* MockRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRequest.swift; sourceTree = "<group>"; };
 		3E33BAB32554881700938D58 /* BrasileiraoHttpCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrasileiraoHttpCode.swift; sourceTree = "<group>"; };
 		3E33BAB62554908D00938D58 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		3E8FD26F25583EDF00E4DC50 /* CampeonatoParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampeonatoParser.swift; sourceTree = "<group>"; };
+		3E8FD27625583F5000E4DC50 /* CampeonatoBrasileiro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampeonatoBrasileiro.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +201,7 @@
 		3E33BA722554013000938D58 /* Brasileirao */ = {
 			isa = PBXGroup;
 			children = (
+				3E8FD26D25583D6100E4DC50 /* Features */,
 				3E21534F2557FEF0005EA396 /* Resources */,
 				3E2153402557FB8D005EA396 /* Core */,
 				3E33BAB52554906B00938D58 /* Helpers */,
@@ -282,6 +287,39 @@
 				3E33BAB62554908D00938D58 /* StringExtension.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3E8FD26D25583D6100E4DC50 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				3E8FD26E25583EC400E4DC50 /* Campeonato */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		3E8FD26E25583EC400E4DC50 /* Campeonato */ = {
+			isa = PBXGroup;
+			children = (
+				3E8FD27525583F3700E4DC50 /* Model */,
+				3E8FD27425583F2C00E4DC50 /* Handler */,
+			);
+			path = Campeonato;
+			sourceTree = "<group>";
+		};
+		3E8FD27425583F2C00E4DC50 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				3E8FD26F25583EDF00E4DC50 /* CampeonatoParser.swift */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		3E8FD27525583F3700E4DC50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E8FD27625583F5000E4DC50 /* CampeonatoBrasileiro.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,8 +462,10 @@
 				3E33BA7E2554013000938D58 /* Brasileirao.xcdatamodeld in Sources */,
 				3E21533C2557FA26005EA396 /* Utils.swift in Sources */,
 				3E2153182555DECD005EA396 /* SessionManager.swift in Sources */,
+				3E8FD27025583EDF00E4DC50 /* CampeonatoParser.swift in Sources */,
 				3E2153422557FBA8005EA396 /* BaseViewController.swift in Sources */,
 				3E33BAB72554908D00938D58 /* StringExtension.swift in Sources */,
+				3E8FD27725583F5000E4DC50 /* CampeonatoBrasileiro.swift in Sources */,
 				3E33BA742554013000938D58 /* AppDelegate.swift in Sources */,
 				3E2153122555DE58005EA396 /* HttpRequest.swift in Sources */,
 				3E21532F2555E972005EA396 /* RequestError.swift in Sources */,

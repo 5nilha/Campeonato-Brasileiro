@@ -9,6 +9,7 @@
 import Foundation
 
 enum RequestError: Error {
+    case emptyData
     case wrongPath
     case unauthorized
     case invalidURL
@@ -46,6 +47,8 @@ enum RequestError: Error {
     
     var description: String {
         switch self {
+        case .emptyData:
+            return "Data is empty or nil"
         case .decodedError:
             return "Error trying to decode data"
         case .unauthorized:
