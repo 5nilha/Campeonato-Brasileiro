@@ -17,13 +17,16 @@ class SessionManager {
             cancelSession()
         }
         sessionTask = URLSession.shared.dataTask(with: httpRequest.request) { [weak self] (data, response, error) in
-            if let error = error {
-                Logger.log(error: error as? RequestError, info: "Error fetching API Data")
-                Utils.instance.showErrorAlert(title: RequestError.wrongPath.title, body: RequestError.wrongPath.description)
+            if let requestError = error as? RequestError {
+                Logger.log(error: requestError, info: "Error fetching API Data")
+                DispatchQueue.main.async {
+                    Utils.instance.showErrorAlert(title: requestError.title, body: requestError.description)
+                }
                 completion(.failure(RequestError.invalidURL))
                 return
             }
             guard let response = response, let httpResponse = response as? HTTPURLResponse else {
+                Logger.log(error: RequestError.unknown, info: "Response Invalid or nil")
                 completion(.failure(RequestError.unknown))
                 return
             }
@@ -32,7 +35,7 @@ class SessionManager {
                 let requestError = RequestError(httpStatusCode: httpResponse.statusCode)
                 Logger.log(error: requestError, info: "\(httpResponse.statusCode) Error fetching API Data")
                 DispatchQueue.main.async {
-                    Utils.instance.showErrorAlert(title: requestError.title, body: RequestError.wrongPath.description)
+                    Utils.instance.showErrorAlert(title: requestError.title, body: requestError.description)
                 }
                 
                 completion(.failure(requestError))
