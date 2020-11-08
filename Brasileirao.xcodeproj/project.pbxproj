@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E2153122555DE58005EA396 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2153112555DE58005EA396 /* HttpRequest.swift */; };
+		3E2153182555DECD005EA396 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2153172555DECD005EA396 /* SessionManager.swift */; };
+		3E21531F2555E091005EA396 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E21531E2555E091005EA396 /* APIHandler.swift */; };
+		3E2153272555E92B005EA396 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2153262555E92B005EA396 /* Logger.swift */; };
+		3E21532F2555E972005EA396 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E21532E2555E972005EA396 /* RequestError.swift */; };
+		3E21533C2557FA26005EA396 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E21533B2557FA26005EA396 /* Utils.swift */; };
+		3E2153422557FBA8005EA396 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2153412557FBA8005EA396 /* BaseViewController.swift */; };
+		3E21534B2557FBE9005EA396 /* UtilsDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E21534A2557FBE9005EA396 /* UtilsDelegates.swift */; };
+		3E2153522557FF49005EA396 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E2153512557FF49005EA396 /* Localizable.strings */; };
 		3E33BA742554013000938D58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33BA732554013000938D58 /* AppDelegate.swift */; };
 		3E33BA762554013000938D58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33BA752554013000938D58 /* SceneDelegate.swift */; };
 		3E33BA782554013000938D58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33BA772554013000938D58 /* ViewController.swift */; };
@@ -19,6 +28,9 @@
 		3E33BAA8255411EE00938D58 /* campeonato_brasileiro.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E33BAA7255411EE00938D58 /* campeonato_brasileiro.json */; };
 		3E33BAA9255411EE00938D58 /* campeonato_brasileiro.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E33BAA7255411EE00938D58 /* campeonato_brasileiro.json */; };
 		3E33BAAA255411EE00938D58 /* campeonato_brasileiro.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E33BAA7255411EE00938D58 /* campeonato_brasileiro.json */; };
+		3E33BAB12554867900938D58 /* MockRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33BAB02554867900938D58 /* MockRequest.swift */; };
+		3E33BAB42554881700938D58 /* BrasileiraoHttpCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33BAB32554881700938D58 /* BrasileiraoHttpCode.swift */; };
+		3E33BAB72554908D00938D58 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33BAB62554908D00938D58 /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +51,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E2153112555DE58005EA396 /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		3E2153172555DECD005EA396 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		3E21531E2555E091005EA396 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		3E2153262555E92B005EA396 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		3E21532E2555E972005EA396 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		3E21533B2557FA26005EA396 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		3E2153412557FBA8005EA396 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		3E21534A2557FBE9005EA396 /* UtilsDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsDelegates.swift; sourceTree = "<group>"; };
+		3E2153512557FF49005EA396 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		3E33BA702554013000938D58 /* Brasileirao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brasileirao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E33BA732554013000938D58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E33BA752554013000938D58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +76,9 @@
 		3E33BA982554013100938D58 /* BrasileiraoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrasileiraoUITests.swift; sourceTree = "<group>"; };
 		3E33BA9A2554013100938D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E33BAA7255411EE00938D58 /* campeonato_brasileiro.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = campeonato_brasileiro.json; sourceTree = "<group>"; };
+		3E33BAB02554867900938D58 /* MockRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRequest.swift; sourceTree = "<group>"; };
+		3E33BAB32554881700938D58 /* BrasileiraoHttpCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrasileiraoHttpCode.swift; sourceTree = "<group>"; };
+		3E33BAB62554908D00938D58 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +106,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E2153102555DE33005EA396 /* HttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				3E33BAB32554881700938D58 /* BrasileiraoHttpCode.swift */,
+				3E2153112555DE58005EA396 /* HttpRequest.swift */,
+				3E21532E2555E972005EA396 /* RequestError.swift */,
+			);
+			path = HttpRequest;
+			sourceTree = "<group>";
+		};
+		3E2153162555DEA2005EA396 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				3E2153172555DECD005EA396 /* SessionManager.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		3E21531D2555E07C005EA396 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				3E21531E2555E091005EA396 /* APIHandler.swift */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		3E2153252555E91D005EA396 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				3E2153262555E92B005EA396 /* Logger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		3E2153402557FB8D005EA396 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3E2153412557FBA8005EA396 /* BaseViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3E2153492557FBCF005EA396 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3E21533B2557FA26005EA396 /* Utils.swift */,
+				3E21534A2557FBE9005EA396 /* UtilsDelegates.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3E21534F2557FEF0005EA396 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3E2153502557FF14005EA396 /* Localization */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3E2153502557FF14005EA396 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				3E2153512557FF49005EA396 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		3E33BA672554013000938D58 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +197,10 @@
 		3E33BA722554013000938D58 /* Brasileirao */ = {
 			isa = PBXGroup;
 			children = (
+				3E21534F2557FEF0005EA396 /* Resources */,
+				3E2153402557FB8D005EA396 /* Core */,
+				3E33BAB52554906B00938D58 /* Helpers */,
+				3E33BAB2255487D200938D58 /* Managers */,
 				3E33BA732554013000938D58 /* AppDelegate.swift */,
 				3E33BA752554013000938D58 /* SceneDelegate.swift */,
 				3E33BA772554013000938D58 /* ViewController.swift */,
@@ -121,6 +216,7 @@
 		3E33BA8C2554013100938D58 /* BrasileiraoTests */ = {
 			isa = PBXGroup;
 			children = (
+				3E33BAAD255485F500938D58 /* Helpers */,
 				3E33BAAB2554124600938D58 /* Features */,
 				3E33BA8D2554013100938D58 /* BrasileiraoTests.swift */,
 				3E33BA8F2554013100938D58 /* Info.plist */,
@@ -158,6 +254,34 @@
 			children = (
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		3E33BAAD255485F500938D58 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3E33BAB02554867900938D58 /* MockRequest.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3E33BAB2255487D200938D58 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3E2153252555E91D005EA396 /* Logger */,
+				3E21531D2555E07C005EA396 /* Handler */,
+				3E2153162555DEA2005EA396 /* Session */,
+				3E2153102555DE33005EA396 /* HttpRequest */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		3E33BAB52554906B00938D58 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3E2153492557FBCF005EA396 /* Utils */,
+				3E33BAB62554908D00938D58 /* StringExtension.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +388,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E2153522557FF49005EA396 /* Localizable.strings in Resources */,
 				3E33BAA8255411EE00938D58 /* campeonato_brasileiro.json in Resources */,
 				3E33BA832554013100938D58 /* LaunchScreen.storyboard in Resources */,
 				3E33BA802554013100938D58 /* Assets.xcassets in Resources */,
@@ -295,8 +420,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E33BA782554013000938D58 /* ViewController.swift in Sources */,
+				3E2153272555E92B005EA396 /* Logger.swift in Sources */,
 				3E33BA7E2554013000938D58 /* Brasileirao.xcdatamodeld in Sources */,
+				3E21533C2557FA26005EA396 /* Utils.swift in Sources */,
+				3E2153182555DECD005EA396 /* SessionManager.swift in Sources */,
+				3E2153422557FBA8005EA396 /* BaseViewController.swift in Sources */,
+				3E33BAB72554908D00938D58 /* StringExtension.swift in Sources */,
 				3E33BA742554013000938D58 /* AppDelegate.swift in Sources */,
+				3E2153122555DE58005EA396 /* HttpRequest.swift in Sources */,
+				3E21532F2555E972005EA396 /* RequestError.swift in Sources */,
+				3E21531F2555E091005EA396 /* APIHandler.swift in Sources */,
+				3E33BAB42554881700938D58 /* BrasileiraoHttpCode.swift in Sources */,
+				3E21534B2557FBE9005EA396 /* UtilsDelegates.swift in Sources */,
 				3E33BA762554013000938D58 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +441,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E33BA8E2554013100938D58 /* BrasileiraoTests.swift in Sources */,
+				3E33BAB12554867900938D58 /* MockRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
