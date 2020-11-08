@@ -10,7 +10,7 @@ import Foundation
 
 final class APIHandler {
     
-    private var url: URL!
+    private var url: URL?
     
     init(url: URL) {
         self.url = url
