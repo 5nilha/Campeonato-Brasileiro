@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E21530C2555D54C005EA396 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E21530B2555D54C005EA396 /* RequestManager.swift */; };
 		3E2153122555DE58005EA396 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2153112555DE58005EA396 /* HttpRequest.swift */; };
 		3E2153182555DECD005EA396 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2153172555DECD005EA396 /* SessionManager.swift */; };
 		3E21531F2555E091005EA396 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E21531E2555E091005EA396 /* APIHandler.swift */; };
@@ -52,7 +51,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3E21530B2555D54C005EA396 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		3E2153112555DE58005EA396 /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
 		3E2153172555DECD005EA396 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		3E21531E2555E091005EA396 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
@@ -112,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				3E33BAB32554881700938D58 /* BrasileiraoHttpCode.swift */,
-				3E21530B2555D54C005EA396 /* RequestManager.swift */,
 				3E2153112555DE58005EA396 /* HttpRequest.swift */,
 				3E21532E2555E972005EA396 /* RequestError.swift */,
 			);
@@ -430,7 +427,6 @@
 				3E2153422557FBA8005EA396 /* BaseViewController.swift in Sources */,
 				3E33BAB72554908D00938D58 /* StringExtension.swift in Sources */,
 				3E33BA742554013000938D58 /* AppDelegate.swift in Sources */,
-				3E21530C2555D54C005EA396 /* RequestManager.swift in Sources */,
 				3E2153122555DE58005EA396 /* HttpRequest.swift in Sources */,
 				3E21532F2555E972005EA396 /* RequestError.swift in Sources */,
 				3E21531F2555E091005EA396 /* APIHandler.swift in Sources */,
