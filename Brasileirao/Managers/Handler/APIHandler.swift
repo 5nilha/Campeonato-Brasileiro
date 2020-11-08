@@ -23,13 +23,20 @@ final class APIHandler {
     final func fetchAPIData(completion: @escaping (Result<Data, RequestError>) -> ()) {
         guard let url = url
         else {
-            Logger.log(error: .emptyURL)
+            let requestError = RequestError.emptyURL
+            Logger.log(error: requestError)
+            completion(.failure(requestError))
             return
         }
 
         let httpRequest = HttpRequest(url: url)
         SessionManager.instance.session(httpRequest: httpRequest) { (result) in
-            completion(result)
+            switch result {
+            case .success(let data):
+                completion(.success(data))
+            case .failure(let requestError):
+                completion(.failure(requestError))
+            }
         }
     }
 }
