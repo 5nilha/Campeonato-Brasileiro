@@ -20,16 +20,16 @@ final class APIHandler {
         print("API Handler Deinitialized")
     }
     
-    final func fetchAPIData(completion: @escaping (Result<Data, Error>) -> ()) {
+    final func fetchAPIData(completion: @escaping (Result<Data, RequestError>) -> ()) {
         guard let url = url
         else {
             Logger.log(error: .emptyURL)
             return
         }
-        var request = URLRequest(url: url)
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        
-        //TODO: Starting Section Here
+
+        let httpRequest = HttpRequest(url: url)
+        SessionManager.instance.session(httpRequest: httpRequest) { (result) in
+            completion(result)
+        }
     }
-    
 }
