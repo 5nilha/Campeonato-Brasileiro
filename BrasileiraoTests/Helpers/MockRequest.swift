@@ -46,4 +46,16 @@ final class MockRequest {
         return mock
     }
     
+    @discardableResult class func mockAPICall(_ apiEndpoint: String, httpCode: BrasileiraoHttpCode, jsonFileName: String? = nil) -> MockRequest {
+        
+        let mock = MockRequest(httpCode: httpCode, fileForURL: { (url) -> String? in
+            if url.containsIgnoringCase(apiEndpoint) {
+                return jsonFileName
+            }
+            return nil
+        })
+        
+        return mock
+    }
+    
 }

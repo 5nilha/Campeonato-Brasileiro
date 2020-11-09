@@ -9,13 +9,8 @@
 import Foundation
 
 final class CampeonatoParser {
-    init(){}
-    
-    deinit {
-        print("Dataparser deinitiated")
-    }
-    
-    final func parser(data: Data?) -> Any? {
+
+    static func parser(data: Data?) -> CampeonatoBrasileiro? {
         guard let data = data else {
             let requestError = RequestError.emptyData
             Logger.log(error: requestError, info: "Error trying to parse a nil data")
@@ -23,11 +18,11 @@ final class CampeonatoParser {
         
         do {
             let decoder = JSONDecoder()
-            let jsonData = try decoder.decode(CampeonatoBrasileiro.self, from: data)
-            return jsonData
+            let object = try decoder.decode(CampeonatoBrasileiro.self, from: data)
+            return object
         } catch {
             let requestError = error as? RequestError ?? RequestError.decodedError
-            Logger.log(error: requestError, info: "Error parsing json")
+            Logger.log(error: requestError, info: "Error parsing json - \(error.localizedDescription)")
             return nil
         }
     }

@@ -10,27 +10,18 @@ import Foundation
 
 final class APIHandler {
     
-    private var url: URL?
-    
-    init(url: URL) {
-        self.url = url
-    }
-    
-    deinit {
-        print("API Handler Deinitialized")
-    }
-    
-    final func fetchAPIData(completion: @escaping (Result<Data, RequestError>) -> ()) {
-        guard let url = url
+    static func fetchAPIData(_ url: String?, endpoint: RequestEndpoints, completion: @escaping (Result<Data, RequestError>) -> ()) {
+        guard let stringURL = url,
+              let url = URL(string: "\(stringURL)\(endpoint)")
         else {
-            let requestError = RequestError.emptyURL
+            let requestError = RequestError.wrongPath
             Logger.log(error: requestError)
             completion(.failure(requestError))
             return
         }
 
-        let httpRequest = HttpRequest(url: url)
-        SessionManager.instance.session(httpRequest: httpRequest) { (result) in
+        let httpRequest = HttpRequest(url: url, endpoint: endpoint)
+        RequestManager.instance.session(httpRequest: httpRequest) { (result) in
             switch result {
             case .success(let data):
                 completion(.success(data))

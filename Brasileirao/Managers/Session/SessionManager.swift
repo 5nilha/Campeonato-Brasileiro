@@ -9,10 +9,10 @@
 import Foundation
 
 class SessionManager {
-    static var instance = SessionManager()
+    static let instance = SessionManager()
     private var sessionTask: URLSessionDataTask?
     
-    func session(httpRequest: HttpRequest, completion: @escaping (Result<Data, RequestError>) -> ()) {
+    func startSession(httpRequest: HttpRequest, completion: @escaping (Result<Data, RequestError>) -> ()) {
         if sessionTask != nil {
             cancelSession()
         }

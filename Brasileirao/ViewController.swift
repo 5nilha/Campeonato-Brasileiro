@@ -12,7 +12,14 @@ class ViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+//        CampeonatoBrasileiroService.fetchLeagueData { (result) in
+//            switch result {
+//            case .success(let campeonatoBrasileiro):
+//                print(campeonatoBrasileiro.id)
+//            case .failure(_):
+//                break
+//            }
+//        }
     }
 
 
