@@ -1,5 +1,5 @@
 //
-//  Table.swift
+//  TeamStanding.swift
 //  Brasileirao
 //
 //  Created by Fabio Quintanilha on 11/9/20.

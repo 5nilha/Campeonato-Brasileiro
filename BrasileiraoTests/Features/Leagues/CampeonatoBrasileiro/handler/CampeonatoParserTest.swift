@@ -22,7 +22,7 @@ class CampeonatoParserTest: XCTestCase {
     }
 
     func testCampeonatoParser() {
-        APIHandler.fetchAPIData("", endpoint: .brasilianLeague) { (result) in
+        APIHandler.fetchAPIData(endpoint: .brasilianLeague) { (result) in
             switch result {
             case .success(let data):
                 guard let campeonatoBrasileiro = CampeonatoParser.parser(data: data) else {

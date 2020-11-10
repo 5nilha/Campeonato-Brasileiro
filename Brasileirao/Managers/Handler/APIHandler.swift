@@ -6,16 +6,15 @@
 //  Copyright © 2020 Fabio Quintanilha. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 final class APIHandler {
     
-    static func fetchAPIData(_ url: String?, endpoint: RequestEndpoints, completion: @escaping (Result<Data, RequestError>) -> ()) {
-        guard let stringURL = url,
-              let url = URL(string: "\(stringURL)\(endpoint)")
+    static func fetchAPIData(endpoint: RequestEndpoints, completion: @escaping (Result<Data, RequestError>) -> ()) {
+        guard let url = URL(string: endpoint.completePath)
         else {
             let requestError = RequestError.wrongPath
-            Logger.log(error: requestError)
+            Logger.log(error: requestError, info: "Error trying to fetch Data from URL: \(endpoint.completePath)")
             completion(.failure(requestError))
             return
         }
@@ -27,6 +26,31 @@ final class APIHandler {
                 completion(.success(data))
             case .failure(let requestError):
                 completion(.failure(requestError))
+            }
+        }
+    }
+    
+    static func fetchImage(_ string: String?, completion: @escaping (UIImage?) -> ()) {
+        guard let stringURL = string,
+              let url = URL(string: stringURL)
+        else {
+            let requestError = RequestError.wrongPath
+            Logger.log(error: requestError, info: "Error trying to fetch image with url: \(String(describing: string))")
+            completion(nil)
+            return
+        }
+        
+        //Checks if image exists in the App cache
+        if let image = Cache.images.object(forKey: NSString(string: stringURL)) {
+            completion(image)
+        } else {
+            RequestManager.instance.downloadImage(imageURL: url) { (result) in
+                switch result {
+                case .success(let image):
+                    completion(image)
+                case .failure(_):
+                    completion(nil)
+                }
             }
         }
     }
