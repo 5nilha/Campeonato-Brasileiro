@@ -10,11 +10,11 @@ import Foundation
 
 class CampeonatoBrasileiroService {
     
-    static func fetchLeagueData(url: String, endpoint: RequestEndpoints, completion: @escaping (Result<CampeonatoBrasileiro, RequestError>) -> ()) {
-        APIHandler.fetchAPIData(url, endpoint: endpoint) { (result) in
+    func fetchLeagueData(completion: @escaping (Result<CampeonatoBrasileiro, RequestError>) -> ()) {
+        APIHandler.fetchAPIData(endpoint: .brasilianLeague) { (result) in
             switch result {
             case .success(let data):
-                guard let campeonatoBrasileiro = CampeonatoParser.parser(data: data) as? CampeonatoBrasileiro else {
+                guard let campeonatoBrasileiro = CampeonatoParser.parser(data: data) else {
                     completion(.failure(RequestError.decodedError))
                     return
                 }

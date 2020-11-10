@@ -23,13 +23,13 @@ class APIHandlerTest: XCTestCase {
 
     func testFetchData() {
         
-        APIHandler.fetchAPIData("", endpoint: .brasilianLeague) { (result) in
+        APIHandler.fetchAPIData(endpoint: .brasilianLeague) { (result) in
             switch result {
             case .success(let data):
                 XCTAssertNotNil(data)
             case .failure(_):
                 XCTFail("Nil Data")
             }
-        }
+        } 
     }
 }

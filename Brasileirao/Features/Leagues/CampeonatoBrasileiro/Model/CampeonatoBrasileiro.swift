@@ -15,7 +15,7 @@ final class CampeonatoBrasileiro: Decodable {
     public private (set) var status: String?
     public private (set) var type: String?
     public private (set) var twoLegsGame: Bool?
-    public private (set) var table: [Table]?
+    public private (set) var standingTable: [TeamStanding]?
     public private (set) var edition: Edition?
     public private (set) var matches: [String: [Match]]?
     
@@ -26,7 +26,7 @@ final class CampeonatoBrasileiro: Decodable {
         case status = "status"
         case type = "tipo"
         case twoLegsGame = "ida_e_volta"
-        case table = "tabela"
+        case standingTable = "tabela"
         case edition = "edicao"
         case matches = "partidas"
     }
@@ -41,7 +41,7 @@ final class CampeonatoBrasileiro: Decodable {
         self.status = try container.decodeIfPresent(String.self, forKey: .status)
         self.type = try container.decodeIfPresent(String.self, forKey: .type)
         self.twoLegsGame = try container.decodeIfPresent(Bool.self, forKey: .twoLegsGame)
-        self.table = try container.decodeIfPresent([Table].self, forKey: .table)
+        self.standingTable = try container.decodeIfPresent([TeamStanding].self, forKey: .standingTable)
         self.edition = try container.decodeIfPresent(Edition.self, forKey: .edition)
         self.matches = try container.decodeIfPresent([String: [Match]].self, forKey: .matches)
     }

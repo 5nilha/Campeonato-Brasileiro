@@ -19,4 +19,12 @@ class Utils {
         alertController.addAction(action)
         self.delegate?.presentAlert(alertController)
     }
+    
+    func startLoading() {
+        //TODO: Start a loading spinner here
+    }
+    
+    func stopLoading() {
+        //TODO: Start a loading spinner here
+    }
 }

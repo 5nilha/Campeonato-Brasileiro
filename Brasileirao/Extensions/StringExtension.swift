@@ -13,4 +13,9 @@ extension String {
     func containsIgnoringCase(_ find: String) -> Bool {
         return self.range(of: find, options: NSString.CompareOptions.caseInsensitive) != nil
     }
+    
+    var onlyNumbers: String {
+        let number = self.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
+        return number
+    }
 }

@@ -6,7 +6,7 @@
 //  Copyright © 2020 Fabio Quintanilha. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class SessionManager {
     static let instance = SessionManager()

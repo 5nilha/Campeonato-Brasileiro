@@ -6,7 +6,7 @@
 //  Copyright © 2020 Fabio Quintanilha. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 enum RequestTypes {
     case mock
@@ -46,7 +46,32 @@ class RequestManager {
                 completion(.failure(.wrongPath))
             }
         }
-        
+    }
+    
+    func downloadImage(imageURL: URL, completion: @escaping (Result<UIImage, Error>) -> ()) {
+        DispatchQueue.global().async {
+            do {
+                let data = try Data(contentsOf: imageURL)
+                if let downloadedImage = UIImage(data: data) {
+                    
+                    //Caching Image
+                    Cache.images.setObject(downloadedImage, forKey: NSString(string: imageURL.absoluteString))
+                    
+                    DispatchQueue.main.async {
+                        completion(.success(downloadedImage))
+                    }
+                } else {
+                    let error = RequestError.unknown
+                    Logger.log(error: .emptyData, info: "Error trying to transform data fetched in UIImage: \(imageURL.absoluteString)")
+                    completion(.failure(error))
+                    return
+                }
+            } catch {
+                Logger.log(error: error, info: "Error Trying to download image from server using URL: \(imageURL.absoluteString)")
+                completion(.failure(error))
+                return
+            }
+        }
     }
     
 }

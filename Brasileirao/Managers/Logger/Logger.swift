@@ -26,6 +26,20 @@ class Logger {
         print(errorLog)
     }
     
+    class func log(error: Error?, info: String? = nil) {
+        let errorDescription = error?.localizedDescription
+        let errorTimestamp = Date().timeIntervalSince1970
+        
+        let errorLog = [
+            errorTimestamp: [
+                "description" : errorDescription ?? "",
+                "errorDate" : errorTimestamp,
+                "errorInfo" : info ?? ""
+            ]]
+        
+        print(errorLog)
+    }
+    
     class func debugServiceSuccess(info: String, httpCode: BrasileiraoHttpCode, response: URLResponse, data: Any) {
         print("========================= Debugging =============================")
         print("Information = \(info)")
