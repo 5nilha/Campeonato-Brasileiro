@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SwiftSVG
 
 enum RequestTypes {
     case mock

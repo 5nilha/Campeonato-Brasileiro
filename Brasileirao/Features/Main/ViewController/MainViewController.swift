@@ -27,7 +27,6 @@ class MainViewController: BaseViewController {
 
 extension MainViewController: ControllerObserver {
     func performSegue(for vc: UIViewController) {
-        self.performSegue(withIdentifier: TeamStandingStatsViewController.identifier, sender: self)
-//        self.navigationController?.pushViewController(vc, animated: true)
+        //Insert a segue here
     }
 }
