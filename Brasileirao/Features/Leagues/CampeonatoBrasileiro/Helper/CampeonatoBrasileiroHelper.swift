@@ -17,13 +17,15 @@ final class CampeonatoBrasileiroHelper {
     public private (set) var campeonatoBrasileiroViewModel: CampeonatoBrasileiroViewModel?
     weak var delegate: CampeonatoBrasileiroDelegate?
     
-    func downloadTeamImage(url: String, completion: @escaping (UIImage?) -> Void) {
+    func downloadTeamImage(url: URL, completion: @escaping (UIImage?) -> Void) {
         Utils.instance.startLoading()
         APIHandler.fetchImage(url) { (teamImage) in
             Utils.instance.stopLoading()
             completion(nil)
         }
     }
+    
+    
     
     func getCampeonatoBrasileiroInformation() {
         Utils.instance.startLoading()

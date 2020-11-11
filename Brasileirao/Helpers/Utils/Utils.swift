@@ -13,6 +13,10 @@ class Utils {
     
     weak var delegate: UtilsDelegates?
     
+    func isDeviceOrientationPortrait() -> Bool {
+        return UIDevice.current.orientation.isPortrait
+    }
+    
     func showErrorAlert(title: String?, body: String?) {
         let alertController = UIAlertController(title: title, message: body, preferredStyle: .alert)
         let action = UIAlertAction(title: "ok_action", style: .cancel, handler: nil)

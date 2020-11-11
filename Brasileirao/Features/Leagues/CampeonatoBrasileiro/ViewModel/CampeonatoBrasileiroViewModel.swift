@@ -32,6 +32,10 @@ struct CampeonatoBrasileiroViewModel {
         return edition?.season
     }
     
+    var numberOfTeams: Int {
+        return campeonatoBrasileiro.standingTable?.count ?? 0
+    }
+    
     var standingTable: [TeamStandingViewModel]? {
         guard let standingTable = campeonatoBrasileiro.standingTable else {
             return nil
@@ -40,7 +44,7 @@ struct CampeonatoBrasileiroViewModel {
             return TeamStandingViewModel(teamStanding: teamStanding)
         }
         return leagueStandingViewModel.sorted { (teamA, teamB) -> Bool in
-            guard let teamAPosition = teamA.position, let teamBPosition = teamB.position else {
+            guard let teamAPosition = Int(teamA.position), let teamBPosition = Int(teamB.position) else {
                 return false
             }
             return teamAPosition < teamBPosition
