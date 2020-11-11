@@ -58,6 +58,9 @@
 		3EC4CCED255AA83900D33C90 /* CampeonatoBrasileiroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC4CCEC255AA83900D33C90 /* CampeonatoBrasileiroViewController.swift */; };
 		3EC4CCF2255AB15C00D33C90 /* CampeonatoBrasileiroStandingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC4CCF1255AB15C00D33C90 /* CampeonatoBrasileiroStandingCell.swift */; };
 		3EC4CCF7255AC2D600D33C90 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC4CCF6255AC2D600D33C90 /* ViewExtension.swift */; };
+		3EC4CD42255BEE3F00D33C90 /* CampeonatoBrasileiroMatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC4CD41255BEE3F00D33C90 /* CampeonatoBrasileiroMatchesViewController.swift */; };
+		3EC4CD47255BF52C00D33C90 /* CampeonatoBrasileiroMatchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC4CD46255BF52C00D33C90 /* CampeonatoBrasileiroMatchCell.swift */; };
+		3EC4CD4C255BF57900D33C90 /* GameRoundInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC4CD4B255BF57900D33C90 /* GameRoundInfoCell.swift */; };
 		6173B1CADA5BCA72EE57DC76 /* Pods_Brasileirao.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8C062B6007644E6CF0544D /* Pods_Brasileirao.framework */; };
 		A884740A8A2AA4BD9944EBC0 /* Pods_BrasileiraoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68553220E16C2228ED3DE20D /* Pods_BrasileiraoTests.framework */; };
 		D01904E70842C06A0B3919EA /* Pods_Brasileirao_BrasileiraoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D3B53FB5794A03027DFF82 /* Pods_Brasileirao_BrasileiraoUITests.framework */; };
@@ -136,6 +139,9 @@
 		3EC4CCEC255AA83900D33C90 /* CampeonatoBrasileiroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampeonatoBrasileiroViewController.swift; sourceTree = "<group>"; };
 		3EC4CCF1255AB15C00D33C90 /* CampeonatoBrasileiroStandingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampeonatoBrasileiroStandingCell.swift; sourceTree = "<group>"; };
 		3EC4CCF6255AC2D600D33C90 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		3EC4CD41255BEE3F00D33C90 /* CampeonatoBrasileiroMatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampeonatoBrasileiroMatchesViewController.swift; sourceTree = "<group>"; };
+		3EC4CD46255BF52C00D33C90 /* CampeonatoBrasileiroMatchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampeonatoBrasileiroMatchCell.swift; sourceTree = "<group>"; };
+		3EC4CD4B255BF57900D33C90 /* GameRoundInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRoundInfoCell.swift; sourceTree = "<group>"; };
 		68553220E16C2228ED3DE20D /* Pods_BrasileiraoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrasileiraoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90B203B5E3F22855DE0CDF93 /* Pods-Brasileirao-BrasileiraoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brasileirao-BrasileiraoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Brasileirao-BrasileiraoUITests/Pods-Brasileirao-BrasileiraoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A17D5FCE27100A8616EBA186 /* Pods-Brasileirao.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brasileirao.release.xcconfig"; path = "Target Support Files/Pods-Brasileirao/Pods-Brasileirao.release.xcconfig"; sourceTree = "<group>"; };
@@ -554,6 +560,9 @@
 			children = (
 				3EC4CCEC255AA83900D33C90 /* CampeonatoBrasileiroViewController.swift */,
 				3EC4CCF1255AB15C00D33C90 /* CampeonatoBrasileiroStandingCell.swift */,
+				3EC4CD41255BEE3F00D33C90 /* CampeonatoBrasileiroMatchesViewController.swift */,
+				3EC4CD46255BF52C00D33C90 /* CampeonatoBrasileiroMatchCell.swift */,
+				3EC4CD4B255BF57900D33C90 /* GameRoundInfoCell.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -857,6 +866,7 @@
 				3E8FD3012559C9E600E4DC50 /* TeamStandingViewModel.swift in Sources */,
 				3E2153182555DECD005EA396 /* SessionManager.swift in Sources */,
 				3EC4CCF7255AC2D600D33C90 /* ViewExtension.swift in Sources */,
+				3EC4CD47255BF52C00D33C90 /* CampeonatoBrasileiroMatchCell.swift in Sources */,
 				3E8FD27025583EDF00E4DC50 /* CampeonatoParser.swift in Sources */,
 				3E8FD3072559CCB000E4DC50 /* TeamViewModel.swift in Sources */,
 				3E8FD2DA25597B2500E4DC50 /* Stadium.swift in Sources */,
@@ -865,6 +875,7 @@
 				3E2153422557FBA8005EA396 /* BaseViewController.swift in Sources */,
 				3EC4CCE4255AA1ED00D33C90 /* MainViewController.swift in Sources */,
 				3E8FD2B92559786A00E4DC50 /* Team.swift in Sources */,
+				3EC4CD42255BEE3F00D33C90 /* CampeonatoBrasileiroMatchesViewController.swift in Sources */,
 				3E33BAB72554908D00938D58 /* StringExtension.swift in Sources */,
 				3E8FD3152559D04600E4DC50 /* Cache.swift in Sources */,
 				3E8FD27725583F5000E4DC50 /* CampeonatoBrasileiro.swift in Sources */,
@@ -878,6 +889,7 @@
 				3E8FD2C1255978A000E4DC50 /* TeamStanding.swift in Sources */,
 				3E8FD352255A1FAC00E4DC50 /* MatchViewModel.swift in Sources */,
 				3EC4CCF2255AB15C00D33C90 /* CampeonatoBrasileiroStandingCell.swift in Sources */,
+				3EC4CD4C255BF57900D33C90 /* GameRoundInfoCell.swift in Sources */,
 				3E8FD2E62559C75900E4DC50 /* CampeonatoBrasileiroViewModel.swift in Sources */,
 				3E21531F2555E091005EA396 /* APIHandler.swift in Sources */,
 				3E33BAB42554881700938D58 /* BrasileiraoHttpCode.swift in Sources */,

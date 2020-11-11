@@ -19,15 +19,16 @@ class CampeonatoBrasileiroViewController: UIViewController {
         super.viewDidLoad()
         self.tableView?.delegate = self
         self.tableView?.dataSource = self
-        MainManager.shared.campeonatoBrasileiroHelper.delegate = self
-        MainManager.shared.campeonatoBrasileiroHelper.getCampeonatoBrasileiroInformation()
     }
-}
-
-extension CampeonatoBrasileiroViewController: CampeonatoBrasileiroDelegate {
-    func didUpdate() {
-        campeonatoBrasileiroVM = MainManager.shared.campeonatoBrasileiroHelper.campeonatoBrasileiroViewModel
-        tableView?.reloadData()
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        MainManager.shared.startObserver(on: self)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        MainManager.shared.removeObserver()
     }
 }
 
@@ -44,5 +45,13 @@ extension CampeonatoBrasileiroViewController: UITableViewDelegate, UITableViewDa
         } else {
             return UITableViewCell()
         }
+    }
+}
+
+extension CampeonatoBrasileiroViewController: ControllerObserver{
+
+    func didNotify() {
+        campeonatoBrasileiroVM = MainManager.shared.campeonatoBrasileiroHelper.campeonatoBrasileiroViewModel
+        tableView?.reloadData()
     }
 }

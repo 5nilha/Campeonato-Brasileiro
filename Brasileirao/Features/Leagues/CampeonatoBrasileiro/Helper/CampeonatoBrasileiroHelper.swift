@@ -35,6 +35,7 @@ final class CampeonatoBrasileiroHelper {
             switch result {
             case .success(let campeonatoBrasileiro):
                 self?.campeonatoBrasileiroViewModel = CampeonatoBrasileiroViewModel(campeonatoBrasileiro: campeonatoBrasileiro)
+                
                 self?.delegate?.didUpdate()
             case .failure(let error):
                 //TODO: handle error

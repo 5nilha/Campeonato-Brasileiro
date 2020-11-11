@@ -8,25 +8,32 @@
 
 import UIKit
 
-class MainViewController: BaseViewController {
+class MainViewController: BaseViewController, CampeonatoBrasileiroDelegate {
     
     @IBOutlet weak var leagueImageView: UIImageView?
+    @IBOutlet weak var leagueLabel: UILabel?
     
     var segue: UIStoryboardSegue?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        MainManager.shared.startObserver(on: self)
+        updateView() 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        MainManager.shared.campeonatoBrasileiroHelper.getCampeonatoBrasileiroInformation()
+        MainManager.shared.campeonatoBrasileiroHelper.delegate = self
     }
     
     func updateView() {
         leagueImageView?.image = UIImage(named: "brazil_flag")
         leagueImageView?.cicle
     }
-}
-
-extension MainViewController: ControllerObserver {
-    func performSegue(for vc: UIViewController) {
-        //Insert a segue here
+    
+    func didUpdate() {
+        leagueLabel?.text = MainManager.shared.campeonatoBrasileiroHelper.campeonatoBrasileiroViewModel?.name
+        MainManager.shared.observer?.didNotify()
     }
 }
+

@@ -18,6 +18,6 @@ class HttpRequest {
         self.endpoint = endpoint
         self.request = URLRequest(url: url)
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.addValue("Bearer live_82513414ae191e89844a7fb9a6f0ea", forHTTPHeaderField: "Authorization")
+        request.addValue("Bearer live_41ca7822de2c36589c3f45b951f605", forHTTPHeaderField: "Authorization")
     }
 }

@@ -32,12 +32,14 @@ class MatchViewModel {
         return TeamViewModel(team: awayTeam)
     }
     
-    var scoreHomeTeam: Int? {
-        return match.scoreHomeTeam
+    var scoreHomeTeam: String {
+        guard let score = match.scoreHomeTeam else { return "" }
+        return "\(score)"
     }
     
-    var scoreAwayTeam: Int? {
-        return match.scoreAwayTeam
+    var scoreAwayTeam: String {
+        guard let score = match.scoreAwayTeam else { return "" }
+        return "\(score)"
     }
     
     var status: String? {

@@ -9,7 +9,7 @@
 import UIKit
 
 protocol ControllerObserver: AnyObject {
-    func performSegue(for vc: UIViewController)
+    func didNotify()
 }
 
 final class MainManager {
@@ -24,11 +24,14 @@ final class MainManager {
         self.observer = observer
     }
     
+    func removeObserver() {
+        self.observer = nil
+    }
+    
     func reset() {
         campeonatoBrasileiroHelper = CampeonatoBrasileiroHelper()
         observer = nil
     }
-
 
 }
 
