@@ -30,18 +30,10 @@ final class APIHandler {
         }
     }
     
-    static func fetchImage(_ string: String?, completion: @escaping (UIImage?) -> ()) {
-        guard let stringURL = string,
-              let url = URL(string: stringURL)
-        else {
-            let requestError = RequestError.wrongPath
-            Logger.log(error: requestError, info: "Error trying to fetch image with url: \(String(describing: string))")
-            completion(nil)
-            return
-        }
-        
+    static func fetchImage(_ url: URL, completion: @escaping (UIImage?) -> ()) {
+       
         //Checks if image exists in the App cache
-        if let image = Cache.images.object(forKey: NSString(string: stringURL)) {
+        if let image = Cache.images.object(forKey: NSString(string: url.absoluteString)) {
             completion(image)
         } else {
             RequestManager.instance.downloadImage(imageURL: url) { (result) in

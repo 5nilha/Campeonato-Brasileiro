@@ -10,6 +10,19 @@ import Foundation
 
 class Logger {
     
+    class func log(title: String, description: String) {
+        let errorTimestamp = Date().timeIntervalSince1970
+        
+        let errorLog = [
+            errorTimestamp: [
+                "title" : title,
+                "description" : description,
+                "errorDate" : errorTimestamp
+            ]]
+        
+        print(errorLog)
+    }
+    
     class func log(error: RequestError?, info: String? = nil) {
         let errorDescription = error?.description
         let errorTitle = error?.title

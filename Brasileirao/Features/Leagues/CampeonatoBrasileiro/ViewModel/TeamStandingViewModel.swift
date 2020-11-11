@@ -16,52 +16,50 @@ struct TeamStandingViewModel {
         self.teamStanding = teamStanding
     }
     
-    var position: Int? {
-        return teamStanding?.position
+    var position: String {
+        guard let teamPosition = teamStanding?.position else { return ""}
+        return "\(teamPosition)"
     }
-    var positionVariation: Int {
-        return teamStanding?.positionVariation ?? 0
-    }
-    
-    var overall: Double {
-        return teamStanding?.overall ?? 0.0
+    var positionVariation: String {
+        return "\(teamStanding?.positionVariation ?? 0)"
     }
     
-    var points: Int {
-        return teamStanding?.points ?? 0
+    var overall: String {
+        return "\(teamStanding?.overall ?? 0.0)%"
     }
     
-    var matchesPlayed: Int {
-        return teamStanding?.matchesPlayed ?? 0
+    var points: String {
+        return "\(teamStanding?.points ?? 0)"
     }
     
-    var won: Int {
-        return teamStanding?.won ?? 0
+    var matchesPlayed: String {
+        return "\(teamStanding?.matchesPlayed ?? 0)"
     }
     
-    var draw: Int {
-        return teamStanding?.draw ?? 0
+    var won: String {
+        return "\(teamStanding?.won ?? 0)"
     }
     
-    var loss: Int {
-        return teamStanding?.loss ?? 0
+    var draw: String {
+        return "\(teamStanding?.draw ?? 0)"
     }
     
-    var goalsFor: Int {
-        return teamStanding?.goalsFor ?? 0
+    var loss: String {
+        return "\(teamStanding?.loss ?? 0)"
     }
     
-    var goalsAgainst: Int {
-        return teamStanding?.goalsAgainst ?? 0
+    var goalsFor: String {
+        return "\(teamStanding?.goalsFor ?? 0)"
     }
     
-    var goalsDifference: Int {
-        return teamStanding?.goalsDifference ?? 0
+    var goalsAgainst: String {
+        return "\(teamStanding?.goalsAgainst ?? 0)"
     }
     
-    var goalsAveragePerGame: Double {
-        return Double(goalsFor) / Double(matchesPlayed)
+    var goalsDifference: String {
+        return "\(teamStanding?.goalsDifference ?? 0)"
     }
+    
     var lastGames: [String] {
         return teamStanding?.lastGames ?? [String]()
     }

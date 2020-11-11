@@ -19,4 +19,9 @@ struct TeamViewModel {
     var name: String? {
         return team.name
     }
+    
+    var escudoUrl: URL? {
+        guard let escudo = team.escudo, let url = URL(string: escudo) else { return nil }
+        return url
+    }
 }

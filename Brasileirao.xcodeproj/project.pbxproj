@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,7 +18,6 @@
 		3E2153522557FF49005EA396 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E2153512557FF49005EA396 /* Localizable.strings */; };
 		3E33BA742554013000938D58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33BA732554013000938D58 /* AppDelegate.swift */; };
 		3E33BA762554013000938D58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33BA752554013000938D58 /* SceneDelegate.swift */; };
-		3E33BA782554013000938D58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33BA772554013000938D58 /* ViewController.swift */; };
 		3E33BA7B2554013000938D58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E33BA792554013000938D58 /* Main.storyboard */; };
 		3E33BA7E2554013000938D58 /* Brasileirao.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3E33BA7C2554013000938D58 /* Brasileirao.xcdatamodeld */; };
 		3E33BA802554013100938D58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E33BA7F2554013100938D58 /* Assets.xcassets */; };
@@ -55,6 +54,13 @@
 		3E8FD34A255A1DE400E4DC50 /* StadiumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8FD349255A1DE400E4DC50 /* StadiumViewModel.swift */; };
 		3E8FD352255A1FAC00E4DC50 /* MatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8FD351255A1FAC00E4DC50 /* MatchViewModel.swift */; };
 		3E8FD358255A8A9A00E4DC50 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8FD357255A8A9A00E4DC50 /* DateExtension.swift */; };
+		3EC4CCE4255AA1ED00D33C90 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC4CCE3255AA1ED00D33C90 /* MainViewController.swift */; };
+		3EC4CCED255AA83900D33C90 /* CampeonatoBrasileiroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC4CCEC255AA83900D33C90 /* CampeonatoBrasileiroViewController.swift */; };
+		3EC4CCF2255AB15C00D33C90 /* CampeonatoBrasileiroStandingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC4CCF1255AB15C00D33C90 /* CampeonatoBrasileiroStandingCell.swift */; };
+		3EC4CCF7255AC2D600D33C90 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC4CCF6255AC2D600D33C90 /* ViewExtension.swift */; };
+		6173B1CADA5BCA72EE57DC76 /* Pods_Brasileirao.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8C062B6007644E6CF0544D /* Pods_Brasileirao.framework */; };
+		A884740A8A2AA4BD9944EBC0 /* Pods_BrasileiraoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68553220E16C2228ED3DE20D /* Pods_BrasileiraoTests.framework */; };
+		D01904E70842C06A0B3919EA /* Pods_Brasileirao_BrasileiraoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D3B53FB5794A03027DFF82 /* Pods_Brasileirao_BrasileiraoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,7 +93,6 @@
 		3E33BA702554013000938D58 /* Brasileirao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brasileirao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E33BA732554013000938D58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E33BA752554013000938D58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3E33BA772554013000938D58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3E33BA7A2554013000938D58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E33BA7D2554013000938D58 /* Brasileirao.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Brasileirao.xcdatamodel; sourceTree = "<group>"; };
 		3E33BA7F2554013100938D58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -127,6 +132,19 @@
 		3E8FD349255A1DE400E4DC50 /* StadiumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StadiumViewModel.swift; sourceTree = "<group>"; };
 		3E8FD351255A1FAC00E4DC50 /* MatchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewModel.swift; sourceTree = "<group>"; };
 		3E8FD357255A8A9A00E4DC50 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		3EC4CCE3255AA1ED00D33C90 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3EC4CCEC255AA83900D33C90 /* CampeonatoBrasileiroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampeonatoBrasileiroViewController.swift; sourceTree = "<group>"; };
+		3EC4CCF1255AB15C00D33C90 /* CampeonatoBrasileiroStandingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampeonatoBrasileiroStandingCell.swift; sourceTree = "<group>"; };
+		3EC4CCF6255AC2D600D33C90 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		68553220E16C2228ED3DE20D /* Pods_BrasileiraoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrasileiraoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90B203B5E3F22855DE0CDF93 /* Pods-Brasileirao-BrasileiraoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brasileirao-BrasileiraoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Brasileirao-BrasileiraoUITests/Pods-Brasileirao-BrasileiraoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A17D5FCE27100A8616EBA186 /* Pods-Brasileirao.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brasileirao.release.xcconfig"; path = "Target Support Files/Pods-Brasileirao/Pods-Brasileirao.release.xcconfig"; sourceTree = "<group>"; };
+		B5CD9FA5EA6115B46F9FFB6E /* Pods-BrasileiraoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrasileiraoTests.release.xcconfig"; path = "Target Support Files/Pods-BrasileiraoTests/Pods-BrasileiraoTests.release.xcconfig"; sourceTree = "<group>"; };
+		B5D3B53FB5794A03027DFF82 /* Pods_Brasileirao_BrasileiraoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brasileirao_BrasileiraoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8C062B6007644E6CF0544D /* Pods_Brasileirao.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brasileirao.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5D9E1E53E34A0284083DB9A /* Pods-Brasileirao.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brasileirao.debug.xcconfig"; path = "Target Support Files/Pods-Brasileirao/Pods-Brasileirao.debug.xcconfig"; sourceTree = "<group>"; };
+		CD458460E9312422DC6CD7A7 /* Pods-Brasileirao-BrasileiraoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brasileirao-BrasileiraoUITests.release.xcconfig"; path = "Target Support Files/Pods-Brasileirao-BrasileiraoUITests/Pods-Brasileirao-BrasileiraoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E735DB740855948D6C011DAB /* Pods-BrasileiraoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrasileiraoTests.debug.xcconfig"; path = "Target Support Files/Pods-BrasileiraoTests/Pods-BrasileiraoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6173B1CADA5BCA72EE57DC76 /* Pods_Brasileirao.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A884740A8A2AA4BD9944EBC0 /* Pods_BrasileiraoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D01904E70842C06A0B3919EA /* Pods_Brasileirao_BrasileiraoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +253,8 @@
 				3E33BA8C2554013100938D58 /* BrasileiraoTests */,
 				3E33BA972554013100938D58 /* BrasileiraoUITests */,
 				3E33BA712554013000938D58 /* Products */,
+				ADC8F014C74350951CF7FF14 /* Pods */,
+				93DFE583108A53603C55CD5C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -256,8 +279,6 @@
 				3E33BAB2255487D200938D58 /* Managers */,
 				3E33BA732554013000938D58 /* AppDelegate.swift */,
 				3E33BA752554013000938D58 /* SceneDelegate.swift */,
-				3E33BA772554013000938D58 /* ViewController.swift */,
-				3E33BA792554013000938D58 /* Main.storyboard */,
 				3E33BA7F2554013100938D58 /* Assets.xcassets */,
 				3E33BA812554013100938D58 /* LaunchScreen.storyboard */,
 				3E33BA842554013100938D58 /* Info.plist */,
@@ -421,6 +442,8 @@
 		3E8FD2B62559782D00E4DC50 /* CampeonatoBrasileiro */ = {
 			isa = PBXGroup;
 			children = (
+				3EC4CCE1255AA19E00D33C90 /* Storyboard */,
+				3EC4CCE0255AA14F00D33C90 /* ViewController */,
 				3E8FD32A2559E2F100E4DC50 /* Helper */,
 				3E8FD2E42559C73400E4DC50 /* ViewModel */,
 				3E8FD27E2558CFCF00E4DC50 /* Service */,
@@ -477,7 +500,8 @@
 		3E8FD31E2559E22E00E4DC50 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				3E8FD31F2559E25600E4DC50 /* MainManager.swift */,
+				3EC4CCEB255AA81900D33C90 /* Manager */,
+				3EC4CCE2255AA1D300D33C90 /* ViewController */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -520,8 +544,65 @@
 			children = (
 				3E33BAB62554908D00938D58 /* StringExtension.swift */,
 				3E8FD357255A8A9A00E4DC50 /* DateExtension.swift */,
+				3EC4CCF6255AC2D600D33C90 /* ViewExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3EC4CCE0255AA14F00D33C90 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3EC4CCEC255AA83900D33C90 /* CampeonatoBrasileiroViewController.swift */,
+				3EC4CCF1255AB15C00D33C90 /* CampeonatoBrasileiroStandingCell.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3EC4CCE1255AA19E00D33C90 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3E33BA792554013000938D58 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		3EC4CCE2255AA1D300D33C90 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3EC4CCE3255AA1ED00D33C90 /* MainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3EC4CCEB255AA81900D33C90 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3E8FD31F2559E25600E4DC50 /* MainManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		93DFE583108A53603C55CD5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF8C062B6007644E6CF0544D /* Pods_Brasileirao.framework */,
+				B5D3B53FB5794A03027DFF82 /* Pods_Brasileirao_BrasileiraoUITests.framework */,
+				68553220E16C2228ED3DE20D /* Pods_BrasileiraoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADC8F014C74350951CF7FF14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5D9E1E53E34A0284083DB9A /* Pods-Brasileirao.debug.xcconfig */,
+				A17D5FCE27100A8616EBA186 /* Pods-Brasileirao.release.xcconfig */,
+				90B203B5E3F22855DE0CDF93 /* Pods-Brasileirao-BrasileiraoUITests.debug.xcconfig */,
+				CD458460E9312422DC6CD7A7 /* Pods-Brasileirao-BrasileiraoUITests.release.xcconfig */,
+				E735DB740855948D6C011DAB /* Pods-BrasileiraoTests.debug.xcconfig */,
+				B5CD9FA5EA6115B46F9FFB6E /* Pods-BrasileiraoTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -531,9 +612,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E33BA9D2554013100938D58 /* Build configuration list for PBXNativeTarget "Brasileirao" */;
 			buildPhases = (
+				9D99E0553470DF14E050AB6B /* [CP] Check Pods Manifest.lock */,
 				3E33BA6C2554013000938D58 /* Sources */,
 				3E33BA6D2554013000938D58 /* Frameworks */,
 				3E33BA6E2554013000938D58 /* Resources */,
+				E3FC0294943DC54484C57841 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -548,6 +631,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E33BAA02554013100938D58 /* Build configuration list for PBXNativeTarget "BrasileiraoTests" */;
 			buildPhases = (
+				69FCBE5FCF3E6BD0BC016B95 /* [CP] Check Pods Manifest.lock */,
 				3E33BA852554013100938D58 /* Sources */,
 				3E33BA862554013100938D58 /* Frameworks */,
 				3E33BA872554013100938D58 /* Resources */,
@@ -566,9 +650,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E33BAA32554013100938D58 /* Build configuration list for PBXNativeTarget "BrasileiraoUITests" */;
 			buildPhases = (
+				FD57A16B5FC5E036F2598E06 /* [CP] Check Pods Manifest.lock */,
 				3E33BA902554013100938D58 /* Sources */,
 				3E33BA912554013100938D58 /* Frameworks */,
 				3E33BA922554013100938D58 /* Resources */,
+				25299015762CB47502794491 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -654,12 +740,114 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25299015762CB47502794491 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brasileirao-BrasileiraoUITests/Pods-Brasileirao-BrasileiraoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brasileirao-BrasileiraoUITests/Pods-Brasileirao-BrasileiraoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Brasileirao-BrasileiraoUITests/Pods-Brasileirao-BrasileiraoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69FCBE5FCF3E6BD0BC016B95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BrasileiraoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D99E0553470DF14E050AB6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Brasileirao-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3FC0294943DC54484C57841 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brasileirao/Pods-Brasileirao-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brasileirao/Pods-Brasileirao-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Brasileirao/Pods-Brasileirao-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD57A16B5FC5E036F2598E06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Brasileirao-BrasileiraoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3E33BA6C2554013000938D58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E33BA782554013000938D58 /* ViewController.swift in Sources */,
 				3E8FD358255A8A9A00E4DC50 /* DateExtension.swift in Sources */,
 				3E2153272555E92B005EA396 /* Logger.swift in Sources */,
 				3E8FD3322559E35300E4DC50 /* CampeonatoBrasileiroHelper.swift in Sources */,
@@ -668,11 +856,14 @@
 				3E8FD2802558CFEA00E4DC50 /* CampeonatoBrasileiroService.swift in Sources */,
 				3E8FD3012559C9E600E4DC50 /* TeamStandingViewModel.swift in Sources */,
 				3E2153182555DECD005EA396 /* SessionManager.swift in Sources */,
+				3EC4CCF7255AC2D600D33C90 /* ViewExtension.swift in Sources */,
 				3E8FD27025583EDF00E4DC50 /* CampeonatoParser.swift in Sources */,
 				3E8FD3072559CCB000E4DC50 /* TeamViewModel.swift in Sources */,
 				3E8FD2DA25597B2500E4DC50 /* Stadium.swift in Sources */,
+				3EC4CCED255AA83900D33C90 /* CampeonatoBrasileiroViewController.swift in Sources */,
 				3E8FD2D32559796D00E4DC50 /* Match.swift in Sources */,
 				3E2153422557FBA8005EA396 /* BaseViewController.swift in Sources */,
+				3EC4CCE4255AA1ED00D33C90 /* MainViewController.swift in Sources */,
 				3E8FD2B92559786A00E4DC50 /* Team.swift in Sources */,
 				3E33BAB72554908D00938D58 /* StringExtension.swift in Sources */,
 				3E8FD3152559D04600E4DC50 /* Cache.swift in Sources */,
@@ -686,6 +877,7 @@
 				3E21532F2555E972005EA396 /* RequestError.swift in Sources */,
 				3E8FD2C1255978A000E4DC50 /* TeamStanding.swift in Sources */,
 				3E8FD352255A1FAC00E4DC50 /* MatchViewModel.swift in Sources */,
+				3EC4CCF2255AB15C00D33C90 /* CampeonatoBrasileiroStandingCell.swift in Sources */,
 				3E8FD2E62559C75900E4DC50 /* CampeonatoBrasileiroViewModel.swift in Sources */,
 				3E21531F2555E091005EA396 /* APIHandler.swift in Sources */,
 				3E33BAB42554881700938D58 /* BrasileiraoHttpCode.swift in Sources */,
@@ -868,6 +1060,7 @@
 		};
 		3E33BA9E2554013100938D58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5D9E1E53E34A0284083DB9A /* Pods-Brasileirao.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -886,6 +1079,7 @@
 		};
 		3E33BA9F2554013100938D58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A17D5FCE27100A8616EBA186 /* Pods-Brasileirao.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -904,6 +1098,7 @@
 		};
 		3E33BAA12554013100938D58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E735DB740855948D6C011DAB /* Pods-BrasileiraoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -926,6 +1121,7 @@
 		};
 		3E33BAA22554013100938D58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5CD9FA5EA6115B46F9FFB6E /* Pods-BrasileiraoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -948,6 +1144,7 @@
 		};
 		3E33BAA42554013100938D58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90B203B5E3F22855DE0CDF93 /* Pods-Brasileirao-BrasileiraoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -968,6 +1165,7 @@
 		};
 		3E33BAA52554013100938D58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD458460E9312422DC6CD7A7 /* Pods-Brasileirao-BrasileiraoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

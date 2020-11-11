@@ -6,16 +6,29 @@
 //  Copyright © 2020 Fabio Quintanilha. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+protocol ControllerObserver: AnyObject {
+    func performSegue(for vc: UIViewController)
+}
 
 final class MainManager {
     
     static private (set) var shared = MainManager()
     lazy var campeonatoBrasileiroHelper = CampeonatoBrasileiroHelper()
+    weak public private (set) var observer: ControllerObserver?
     
     init(){}
     
+    func startObserver(on observer: ControllerObserver) {
+        self.observer = observer
+    }
+    
     func reset() {
         campeonatoBrasileiroHelper = CampeonatoBrasileiroHelper()
+        observer = nil
     }
+
+
 }
+

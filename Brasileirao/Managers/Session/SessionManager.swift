@@ -43,8 +43,10 @@ class SessionManager {
             }
             
             Logger.debugServiceSuccess(info: "Data fetched from API", httpCode: BrasileiraoHttpCode.ok, response: response, data: data)
-            completion(.success(data))
-            self?.stopSession()
+            DispatchQueue.main.async {
+                completion(.success(data))
+                self?.stopSession()
+            }
         }
         resumeSession()
     }
