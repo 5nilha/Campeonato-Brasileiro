@@ -6,7 +6,6 @@ target 'Brasileirao' do
   use_frameworks!
 
   # Pods for Brasileirao
-  pod 'SwiftSVG'
   pod 'SDWebImageSVGCoder'
 
   target 'BrasileiraoTests' do
